@@ -1,0 +1,137 @@
+.class public final Landroid/support/e/a/g$b;
+.super Ljava/lang/Object;
+.source "TvContractCompat.java"
+
+# interfaces
+.implements Landroid/support/e/a/g$a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/e/a/g;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "b"
+.end annotation
+
+
+# static fields
+.field public static final a:Landroid/net/Uri;
+
+.field private static final b:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    const-string v0, "content://android.media.tv/channel"
+
+    .line 1530
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v0
+
+    sput-object v0, Landroid/support/e/a/g$b;->a:Landroid/net/Uri;
+
+    .line 1849
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    sput-object v0, Landroid/support/e/a/g$b;->b:Ljava/util/Map;
+
+    .line 1852
+    sget-object v0, Landroid/support/e/a/g$b;->b:Ljava/util/Map;
+
+    const-string v1, "VIDEO_FORMAT_480I"
+
+    const-string v2, "VIDEO_RESOLUTION_SD"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1853
+    sget-object v0, Landroid/support/e/a/g$b;->b:Ljava/util/Map;
+
+    const-string v1, "VIDEO_FORMAT_480P"
+
+    const-string v2, "VIDEO_RESOLUTION_ED"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1854
+    sget-object v0, Landroid/support/e/a/g$b;->b:Ljava/util/Map;
+
+    const-string v1, "VIDEO_FORMAT_576I"
+
+    const-string v2, "VIDEO_RESOLUTION_SD"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1855
+    sget-object v0, Landroid/support/e/a/g$b;->b:Ljava/util/Map;
+
+    const-string v1, "VIDEO_FORMAT_576P"
+
+    const-string v2, "VIDEO_RESOLUTION_ED"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1856
+    sget-object v0, Landroid/support/e/a/g$b;->b:Ljava/util/Map;
+
+    const-string v1, "VIDEO_FORMAT_720P"
+
+    const-string v2, "VIDEO_RESOLUTION_HD"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1857
+    sget-object v0, Landroid/support/e/a/g$b;->b:Ljava/util/Map;
+
+    const-string v1, "VIDEO_FORMAT_1080I"
+
+    const-string v2, "VIDEO_RESOLUTION_HD"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1858
+    sget-object v0, Landroid/support/e/a/g$b;->b:Ljava/util/Map;
+
+    const-string v1, "VIDEO_FORMAT_1080P"
+
+    const-string v2, "VIDEO_RESOLUTION_FHD"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1859
+    sget-object v0, Landroid/support/e/a/g$b;->b:Ljava/util/Map;
+
+    const-string v1, "VIDEO_FORMAT_2160P"
+
+    const-string v2, "VIDEO_RESOLUTION_UHD"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1860
+    sget-object v0, Landroid/support/e/a/g$b;->b:Ljava/util/Map;
+
+    const-string v1, "VIDEO_FORMAT_4320P"
+
+    const-string v2, "VIDEO_RESOLUTION_UHD"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+.end method

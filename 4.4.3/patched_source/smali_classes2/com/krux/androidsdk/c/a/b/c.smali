@@ -1,0 +1,1748 @@
+.class public final Lcom/krux/androidsdk/c/a/b/c;
+.super Lcom/krux/androidsdk/c/a/e/g$b;
+
+# interfaces
+.implements Lcom/krux/androidsdk/c/k;
+
+
+# instance fields
+.field public final a:Lcom/krux/androidsdk/c/c;
+
+.field public b:Ljava/net/Socket;
+
+.field public c:Lcom/krux/androidsdk/c/s;
+
+.field d:Lcom/krux/androidsdk/c/a/e/g;
+
+.field e:Lcom/krux/androidsdk/d/e;
+
+.field f:Lcom/krux/androidsdk/d/d;
+
+.field public g:Z
+
+.field public h:I
+
+.field public i:I
+
+.field public final j:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/ref/Reference<",
+            "Lcom/krux/androidsdk/c/a/b/g;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+.field public k:J
+
+.field private final m:Lcom/krux/androidsdk/c/l;
+
+.field private n:Ljava/net/Socket;
+
+.field private o:Lcom/krux/androidsdk/c/y;
+
+
+# direct methods
+.method public constructor <init>(Lcom/krux/androidsdk/c/l;Lcom/krux/androidsdk/c/c;)V
+    .locals 2
+
+    invoke-direct {p0}, Lcom/krux/androidsdk/c/a/e/g$b;-><init>()V
+
+    const/4 v0, 0x1
+
+    iput v0, p0, Lcom/krux/androidsdk/c/a/b/c;->i:I
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->j:Ljava/util/List;
+
+    const-wide v0, 0x7fffffffffffffffL
+
+    iput-wide v0, p0, Lcom/krux/androidsdk/c/a/b/c;->k:J
+
+    iput-object p1, p0, Lcom/krux/androidsdk/c/a/b/c;->m:Lcom/krux/androidsdk/c/l;
+
+    iput-object p2, p0, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    return-void
+.end method
+
+.method private a(II)V
+    .locals 4
+
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/c;->b:Ljava/net/Proxy;
+
+    iget-object v1, p0, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/c;->a:Lcom/krux/androidsdk/c/a;
+
+    invoke-virtual {v0}, Ljava/net/Proxy;->type()Ljava/net/Proxy$Type;
+
+    move-result-object v2
+
+    sget-object v3, Ljava/net/Proxy$Type;->DIRECT:Ljava/net/Proxy$Type;
+
+    if-eq v2, v3, :cond_1
+
+    invoke-virtual {v0}, Ljava/net/Proxy;->type()Ljava/net/Proxy$Type;
+
+    move-result-object v2
+
+    sget-object v3, Ljava/net/Proxy$Type;->HTTP:Ljava/net/Proxy$Type;
+
+    if-ne v2, v3, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v1, Ljava/net/Socket;
+
+    invoke-direct {v1, v0}, Ljava/net/Socket;-><init>(Ljava/net/Proxy;)V
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    iget-object v0, v1, Lcom/krux/androidsdk/c/a;->c:Ljavax/net/SocketFactory;
+
+    invoke-virtual {v0}, Ljavax/net/SocketFactory;->createSocket()Ljava/net/Socket;
+
+    move-result-object v1
+
+    :goto_1
+    iput-object v1, p0, Lcom/krux/androidsdk/c/a/b/c;->n:Ljava/net/Socket;
+
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->n:Ljava/net/Socket;
+
+    invoke-virtual {v0, p2}, Ljava/net/Socket;->setSoTimeout(I)V
+
+    :try_start_0
+    invoke-static {}, Lcom/krux/androidsdk/c/a/g/e;->b()Lcom/krux/androidsdk/c/a/g/e;
+
+    move-result-object p2
+
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->n:Ljava/net/Socket;
+
+    iget-object v1, p0, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/c;->c:Ljava/net/InetSocketAddress;
+
+    invoke-virtual {p2, v0, v1, p1}, Lcom/krux/androidsdk/c/a/g/e;->a(Ljava/net/Socket;Ljava/net/InetSocketAddress;I)V
+    :try_end_0
+    .catch Ljava/net/ConnectException; {:try_start_0 .. :try_end_0} :catch_1
+
+    :try_start_1
+    iget-object p1, p0, Lcom/krux/androidsdk/c/a/b/c;->n:Ljava/net/Socket;
+
+    invoke-static {p1}, Lcom/krux/androidsdk/d/k;->b(Ljava/net/Socket;)Lcom/krux/androidsdk/d/r;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lcom/krux/androidsdk/d/k;->a(Lcom/krux/androidsdk/d/r;)Lcom/krux/androidsdk/d/e;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/krux/androidsdk/c/a/b/c;->e:Lcom/krux/androidsdk/d/e;
+
+    iget-object p1, p0, Lcom/krux/androidsdk/c/a/b/c;->n:Ljava/net/Socket;
+
+    invoke-static {p1}, Lcom/krux/androidsdk/d/k;->a(Ljava/net/Socket;)Lcom/krux/androidsdk/d/q;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lcom/krux/androidsdk/d/k;->a(Lcom/krux/androidsdk/d/q;)Lcom/krux/androidsdk/d/d;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/krux/androidsdk/c/a/b/c;->f:Lcom/krux/androidsdk/d/d;
+    :try_end_1
+    .catch Ljava/lang/NullPointerException; {:try_start_1 .. :try_end_1} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception p1
+
+    const-string p2, "throw with null exception"
+
+    invoke-virtual {p1}, Ljava/lang/NullPointerException;->getMessage()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-nez p2, :cond_2
+
+    return-void
+
+    :cond_2
+    new-instance p2, Ljava/io/IOException;
+
+    invoke-direct {p2, p1}, Ljava/io/IOException;-><init>(Ljava/lang/Throwable;)V
+
+    throw p2
+
+    :catch_1
+    move-exception p1
+
+    new-instance p2, Ljava/net/ConnectException;
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "Failed to connect to "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/c;->c:Ljava/net/InetSocketAddress;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p2, v0}, Ljava/net/ConnectException;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p2, p1}, Ljava/net/ConnectException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+
+    throw p2
+.end method
+
+.method private a(Lcom/krux/androidsdk/c/a/b/b;)V
+    .locals 8
+
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/c;->a:Lcom/krux/androidsdk/c/a;
+
+    iget-object v1, v0, Lcom/krux/androidsdk/c/a;->i:Ljavax/net/ssl/SSLSocketFactory;
+
+    const/4 v2, 0x0
+
+    :try_start_0
+    iget-object v3, p0, Lcom/krux/androidsdk/c/a/b/c;->n:Ljava/net/Socket;
+
+    iget-object v4, v0, Lcom/krux/androidsdk/c/a;->a:Lcom/krux/androidsdk/c/u;
+
+    iget-object v4, v4, Lcom/krux/androidsdk/c/u;->b:Ljava/lang/String;
+
+    iget-object v5, v0, Lcom/krux/androidsdk/c/a;->a:Lcom/krux/androidsdk/c/u;
+
+    iget v5, v5, Lcom/krux/androidsdk/c/u;->c:I
+
+    const/4 v6, 0x1
+
+    invoke-virtual {v1, v3, v4, v5, v6}, Ljavax/net/ssl/SSLSocketFactory;->createSocket(Ljava/net/Socket;Ljava/lang/String;IZ)Ljava/net/Socket;
+
+    move-result-object v1
+
+    check-cast v1, Ljavax/net/ssl/SSLSocket;
+    :try_end_0
+    .catch Ljava/lang/AssertionError; {:try_start_0 .. :try_end_0} :catch_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    :try_start_1
+    iget v3, p1, Lcom/krux/androidsdk/c/a/b/b;->b:I
+
+    iget-object v4, p1, Lcom/krux/androidsdk/c/a/b/b;->a:Ljava/util/List;
+
+    invoke-interface {v4}, Ljava/util/List;->size()I
+
+    move-result v4
+
+    :goto_0
+    if-ge v3, v4, :cond_1
+
+    iget-object v5, p1, Lcom/krux/androidsdk/c/a/b/b;->a:Ljava/util/List;
+
+    invoke-interface {v5, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Lcom/krux/androidsdk/c/m;
+
+    invoke-virtual {v5, v1}, Lcom/krux/androidsdk/c/m;->a(Ljavax/net/ssl/SSLSocket;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_0
+
+    add-int/2addr v3, v6
+
+    iput v3, p1, Lcom/krux/androidsdk/c/a/b/b;->b:I
+
+    goto :goto_1
+
+    :cond_0
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    move-object v5, v2
+
+    :goto_1
+    if-eqz v5, :cond_7
+
+    invoke-virtual {p1, v1}, Lcom/krux/androidsdk/c/a/b/b;->a(Ljavax/net/ssl/SSLSocket;)Z
+
+    move-result v3
+
+    iput-boolean v3, p1, Lcom/krux/androidsdk/c/a/b/b;->c:Z
+
+    sget-object v3, Lcom/krux/androidsdk/c/a/a;->a:Lcom/krux/androidsdk/c/a/a;
+
+    iget-boolean p1, p1, Lcom/krux/androidsdk/c/a/b/b;->d:Z
+
+    invoke-virtual {v3, v5, v1, p1}, Lcom/krux/androidsdk/c/a/a;->a(Lcom/krux/androidsdk/c/m;Ljavax/net/ssl/SSLSocket;Z)V
+
+    iget-boolean p1, v5, Lcom/krux/androidsdk/c/m;->e:Z
+
+    if-eqz p1, :cond_2
+
+    invoke-static {}, Lcom/krux/androidsdk/c/a/g/e;->b()Lcom/krux/androidsdk/c/a/g/e;
+
+    move-result-object p1
+
+    iget-object v3, v0, Lcom/krux/androidsdk/c/a;->a:Lcom/krux/androidsdk/c/u;
+
+    iget-object v3, v3, Lcom/krux/androidsdk/c/u;->b:Ljava/lang/String;
+
+    iget-object v4, v0, Lcom/krux/androidsdk/c/a;->e:Ljava/util/List;
+
+    invoke-virtual {p1, v1, v3, v4}, Lcom/krux/androidsdk/c/a/g/e;->a(Ljavax/net/ssl/SSLSocket;Ljava/lang/String;Ljava/util/List;)V
+
+    :cond_2
+    invoke-virtual {v1}, Ljavax/net/ssl/SSLSocket;->startHandshake()V
+
+    invoke-virtual {v1}, Ljavax/net/ssl/SSLSocket;->getSession()Ljavax/net/ssl/SSLSession;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lcom/krux/androidsdk/c/s;->a(Ljavax/net/ssl/SSLSession;)Lcom/krux/androidsdk/c/s;
+
+    move-result-object p1
+
+    iget-object v3, v0, Lcom/krux/androidsdk/c/a;->j:Ljavax/net/ssl/HostnameVerifier;
+
+    iget-object v4, v0, Lcom/krux/androidsdk/c/a;->a:Lcom/krux/androidsdk/c/u;
+
+    iget-object v4, v4, Lcom/krux/androidsdk/c/u;->b:Ljava/lang/String;
+
+    invoke-virtual {v1}, Ljavax/net/ssl/SSLSocket;->getSession()Ljavax/net/ssl/SSLSession;
+
+    move-result-object v6
+
+    invoke-interface {v3, v4, v6}, Ljavax/net/ssl/HostnameVerifier;->verify(Ljava/lang/String;Ljavax/net/ssl/SSLSession;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_6
+
+    iget-object v3, v0, Lcom/krux/androidsdk/c/a;->k:Lcom/krux/androidsdk/c/i;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/a;->a:Lcom/krux/androidsdk/c/u;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/u;->b:Ljava/lang/String;
+
+    iget-object v4, p1, Lcom/krux/androidsdk/c/s;->b:Ljava/util/List;
+
+    invoke-virtual {v3, v0, v4}, Lcom/krux/androidsdk/c/i;->a(Ljava/lang/String;Ljava/util/List;)V
+
+    iget-boolean v0, v5, Lcom/krux/androidsdk/c/m;->e:Z
+
+    if-eqz v0, :cond_3
+
+    invoke-static {}, Lcom/krux/androidsdk/c/a/g/e;->b()Lcom/krux/androidsdk/c/a/g/e;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Lcom/krux/androidsdk/c/a/g/e;->a(Ljavax/net/ssl/SSLSocket;)Ljava/lang/String;
+
+    move-result-object v2
+
+    :cond_3
+    iput-object v1, p0, Lcom/krux/androidsdk/c/a/b/c;->b:Ljava/net/Socket;
+
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->b:Ljava/net/Socket;
+
+    invoke-static {v0}, Lcom/krux/androidsdk/d/k;->b(Ljava/net/Socket;)Lcom/krux/androidsdk/d/r;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/krux/androidsdk/d/k;->a(Lcom/krux/androidsdk/d/r;)Lcom/krux/androidsdk/d/e;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->e:Lcom/krux/androidsdk/d/e;
+
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->b:Ljava/net/Socket;
+
+    invoke-static {v0}, Lcom/krux/androidsdk/d/k;->a(Ljava/net/Socket;)Lcom/krux/androidsdk/d/q;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/krux/androidsdk/d/k;->a(Lcom/krux/androidsdk/d/q;)Lcom/krux/androidsdk/d/d;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->f:Lcom/krux/androidsdk/d/d;
+
+    iput-object p1, p0, Lcom/krux/androidsdk/c/a/b/c;->c:Lcom/krux/androidsdk/c/s;
+
+    if-eqz v2, :cond_4
+
+    invoke-static {v2}, Lcom/krux/androidsdk/c/y;->a(Ljava/lang/String;)Lcom/krux/androidsdk/c/y;
+
+    move-result-object p1
+
+    goto :goto_2
+
+    :cond_4
+    sget-object p1, Lcom/krux/androidsdk/c/y;->b:Lcom/krux/androidsdk/c/y;
+
+    :goto_2
+    iput-object p1, p0, Lcom/krux/androidsdk/c/a/b/c;->o:Lcom/krux/androidsdk/c/y;
+    :try_end_1
+    .catch Ljava/lang/AssertionError; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    if-eqz v1, :cond_5
+
+    invoke-static {}, Lcom/krux/androidsdk/c/a/g/e;->b()Lcom/krux/androidsdk/c/a/g/e;
+
+    move-result-object p1
+
+    invoke-virtual {p1, v1}, Lcom/krux/androidsdk/c/a/g/e;->b(Ljavax/net/ssl/SSLSocket;)V
+
+    :cond_5
+    return-void
+
+    :cond_6
+    :try_start_2
+    iget-object p1, p1, Lcom/krux/androidsdk/c/s;->b:Ljava/util/List;
+
+    const/4 v2, 0x0
+
+    invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/security/cert/X509Certificate;
+
+    new-instance v2, Ljavax/net/ssl/SSLPeerUnverifiedException;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "Hostname "
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/a;->a:Lcom/krux/androidsdk/c/u;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/u;->b:Ljava/lang/String;
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, " not verified:\n    certificate: "
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {p1}, Lcom/krux/androidsdk/c/i;->a(Ljava/security/cert/Certificate;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "\n    DN: "
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/security/cert/X509Certificate;->getSubjectDN()Ljava/security/Principal;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/security/Principal;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "\n    subjectAltNames: "
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {p1}, Lcom/krux/androidsdk/c/a/i/d;->a(Ljava/security/cert/X509Certificate;)Ljava/util/List;
+
+    move-result-object p1
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v2, p1}, Ljavax/net/ssl/SSLPeerUnverifiedException;-><init>(Ljava/lang/String;)V
+
+    throw v2
+
+    :cond_7
+    new-instance v0, Ljava/net/UnknownServiceException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string v3, "Unable to find acceptable protocols. isFallback="
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-boolean v3, p1, Lcom/krux/androidsdk/c/a/b/b;->d:Z
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v3, ", modes="
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p1, p1, Lcom/krux/androidsdk/c/a/b/b;->a:Ljava/util/List;
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string p1, ", supported protocols="
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljavax/net/ssl/SSLSocket;->getEnabledProtocols()[Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1}, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/net/UnknownServiceException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+    :try_end_2
+    .catch Ljava/lang/AssertionError; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_4
+
+    :catch_0
+    move-exception p1
+
+    move-object v2, v1
+
+    goto :goto_3
+
+    :catchall_1
+    move-exception p1
+
+    move-object v1, v2
+
+    goto :goto_4
+
+    :catch_1
+    move-exception p1
+
+    :goto_3
+    :try_start_3
+    invoke-static {p1}, Lcom/krux/androidsdk/c/a/c;->a(Ljava/lang/AssertionError;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_8
+
+    new-instance v0, Ljava/io/IOException;
+
+    invoke-direct {v0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/Throwable;)V
+
+    throw v0
+
+    :cond_8
+    throw p1
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    :goto_4
+    if-eqz v1, :cond_9
+
+    invoke-static {}, Lcom/krux/androidsdk/c/a/g/e;->b()Lcom/krux/androidsdk/c/a/g/e;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Lcom/krux/androidsdk/c/a/g/e;->b(Ljavax/net/ssl/SSLSocket;)V
+
+    :cond_9
+    invoke-static {v1}, Lcom/krux/androidsdk/c/a/c;->a(Ljava/net/Socket;)V
+
+    throw p1
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lcom/krux/androidsdk/c/c;
+    .locals 1
+
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    return-object v0
+.end method
+
+.method public final a(IIIZ)V
+    .locals 16
+
+    move-object/from16 v1, p0
+
+    iget-object v0, v1, Lcom/krux/androidsdk/c/a/b/c;->o:Lcom/krux/androidsdk/c/y;
+
+    if-nez v0, :cond_12
+
+    iget-object v0, v1, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/c;->a:Lcom/krux/androidsdk/c/a;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/a;->f:Ljava/util/List;
+
+    new-instance v2, Lcom/krux/androidsdk/c/a/b/b;
+
+    invoke-direct {v2, v0}, Lcom/krux/androidsdk/c/a/b/b;-><init>(Ljava/util/List;)V
+
+    iget-object v3, v1, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v3, v3, Lcom/krux/androidsdk/c/c;->a:Lcom/krux/androidsdk/c/a;
+
+    iget-object v3, v3, Lcom/krux/androidsdk/c/a;->i:Ljavax/net/ssl/SSLSocketFactory;
+
+    if-nez v3, :cond_2
+
+    sget-object v3, Lcom/krux/androidsdk/c/m;->c:Lcom/krux/androidsdk/c/m;
+
+    invoke-interface {v0, v3}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, v1, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/c;->a:Lcom/krux/androidsdk/c/a;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/a;->a:Lcom/krux/androidsdk/c/u;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/u;->b:Ljava/lang/String;
+
+    invoke-static {}, Lcom/krux/androidsdk/c/a/g/e;->b()Lcom/krux/androidsdk/c/a/g/e;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v0}, Lcom/krux/androidsdk/c/a/g/e;->b(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v2, Lcom/krux/androidsdk/c/a/b/e;
+
+    new-instance v3, Ljava/net/UnknownServiceException;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    const-string v5, "CLEARTEXT communication to "
+
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, " not permitted by network security policy"
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v3, v0}, Ljava/net/UnknownServiceException;-><init>(Ljava/lang/String;)V
+
+    invoke-direct {v2, v3}, Lcom/krux/androidsdk/c/a/b/e;-><init>(Ljava/io/IOException;)V
+
+    throw v2
+
+    :cond_1
+    new-instance v0, Lcom/krux/androidsdk/c/a/b/e;
+
+    new-instance v2, Ljava/net/UnknownServiceException;
+
+    const-string v3, "CLEARTEXT communication not enabled for client"
+
+    invoke-direct {v2, v3}, Ljava/net/UnknownServiceException;-><init>(Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Lcom/krux/androidsdk/c/a/b/e;-><init>(Ljava/io/IOException;)V
+
+    throw v0
+
+    :cond_2
+    :goto_0
+    const/4 v3, 0x0
+
+    move-object v4, v3
+
+    :goto_1
+    const/4 v5, 0x1
+
+    const/4 v6, 0x0
+
+    :try_start_0
+    iget-object v0, v1, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v7, v0, Lcom/krux/androidsdk/c/c;->a:Lcom/krux/androidsdk/c/a;
+
+    iget-object v7, v7, Lcom/krux/androidsdk/c/a;->i:Ljavax/net/ssl/SSLSocketFactory;
+
+    if-eqz v7, :cond_3
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/c;->b:Ljava/net/Proxy;
+
+    invoke-virtual {v0}, Ljava/net/Proxy;->type()Ljava/net/Proxy$Type;
+
+    move-result-object v0
+
+    sget-object v7, Ljava/net/Proxy$Type;->HTTP:Ljava/net/Proxy$Type;
+
+    if-ne v0, v7, :cond_3
+
+    const/4 v0, 0x1
+
+    goto :goto_2
+
+    :cond_3
+    const/4 v0, 0x0
+
+    :goto_2
+    if-eqz v0, :cond_8
+
+    new-instance v0, Lcom/krux/androidsdk/c/aa$a;
+
+    invoke-direct {v0}, Lcom/krux/androidsdk/c/aa$a;-><init>()V
+
+    iget-object v7, v1, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v7, v7, Lcom/krux/androidsdk/c/c;->a:Lcom/krux/androidsdk/c/a;
+
+    iget-object v7, v7, Lcom/krux/androidsdk/c/a;->a:Lcom/krux/androidsdk/c/u;
+
+    invoke-virtual {v0, v7}, Lcom/krux/androidsdk/c/aa$a;->a(Lcom/krux/androidsdk/c/u;)Lcom/krux/androidsdk/c/aa$a;
+
+    move-result-object v0
+
+    const-string v7, "Host"
+
+    iget-object v8, v1, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v8, v8, Lcom/krux/androidsdk/c/c;->a:Lcom/krux/androidsdk/c/a;
+
+    iget-object v8, v8, Lcom/krux/androidsdk/c/a;->a:Lcom/krux/androidsdk/c/u;
+
+    invoke-static {v8, v5}, Lcom/krux/androidsdk/c/a/c;->a(Lcom/krux/androidsdk/c/u;Z)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v0, v7, v8}, Lcom/krux/androidsdk/c/aa$a;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/krux/androidsdk/c/aa$a;
+
+    move-result-object v0
+
+    const-string v7, "Proxy-Connection"
+
+    const-string v8, "Keep-Alive"
+
+    invoke-virtual {v0, v7, v8}, Lcom/krux/androidsdk/c/aa$a;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/krux/androidsdk/c/aa$a;
+
+    move-result-object v0
+
+    const-string v7, "User-Agent"
+
+    const-string v8, "okhttp/3.8.0"
+
+    invoke-virtual {v0, v7, v8}, Lcom/krux/androidsdk/c/aa$a;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/krux/androidsdk/c/aa$a;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/krux/androidsdk/c/aa$a;->a()Lcom/krux/androidsdk/c/aa;
+
+    move-result-object v0
+
+    iget-object v7, v0, Lcom/krux/androidsdk/c/aa;->a:Lcom/krux/androidsdk/c/u;
+
+    invoke-direct/range {p0 .. p2}, Lcom/krux/androidsdk/c/a/b/c;->a(II)V
+
+    new-instance v8, Ljava/lang/StringBuilder;
+
+    const-string v9, "CONNECT "
+
+    invoke-direct {v8, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-static {v7, v5}, Lcom/krux/androidsdk/c/a/c;->a(Lcom/krux/androidsdk/c/u;Z)Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v7, " HTTP/1.1"
+
+    invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    new-instance v8, Lcom/krux/androidsdk/c/a/d/a;
+
+    iget-object v9, v1, Lcom/krux/androidsdk/c/a/b/c;->e:Lcom/krux/androidsdk/d/e;
+
+    iget-object v10, v1, Lcom/krux/androidsdk/c/a/b/c;->f:Lcom/krux/androidsdk/d/d;
+
+    invoke-direct {v8, v3, v3, v9, v10}, Lcom/krux/androidsdk/c/a/d/a;-><init>(Lcom/krux/androidsdk/c/x;Lcom/krux/androidsdk/c/a/b/g;Lcom/krux/androidsdk/d/e;Lcom/krux/androidsdk/d/d;)V
+
+    iget-object v9, v1, Lcom/krux/androidsdk/c/a/b/c;->e:Lcom/krux/androidsdk/d/e;
+
+    invoke-interface {v9}, Lcom/krux/androidsdk/d/e;->a()Lcom/krux/androidsdk/d/s;
+
+    move-result-object v9
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
+
+    move/from16 v10, p2
+
+    int-to-long v11, v10
+
+    :try_start_1
+    sget-object v13, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-virtual {v9, v11, v12, v13}, Lcom/krux/androidsdk/d/s;->a(JLjava/util/concurrent/TimeUnit;)Lcom/krux/androidsdk/d/s;
+
+    iget-object v9, v1, Lcom/krux/androidsdk/c/a/b/c;->f:Lcom/krux/androidsdk/d/d;
+
+    invoke-interface {v9}, Lcom/krux/androidsdk/d/d;->a()Lcom/krux/androidsdk/d/s;
+
+    move-result-object v9
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
+
+    move/from16 v11, p3
+
+    int-to-long v12, v11
+
+    :try_start_2
+    sget-object v14, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-virtual {v9, v12, v13, v14}, Lcom/krux/androidsdk/d/s;->a(JLjava/util/concurrent/TimeUnit;)Lcom/krux/androidsdk/d/s;
+
+    iget-object v9, v0, Lcom/krux/androidsdk/c/aa;->c:Lcom/krux/androidsdk/c/t;
+
+    invoke-virtual {v8, v9, v7}, Lcom/krux/androidsdk/c/a/d/a;->a(Lcom/krux/androidsdk/c/t;Ljava/lang/String;)V
+
+    invoke-virtual {v8}, Lcom/krux/androidsdk/c/a/d/a;->b()V
+
+    invoke-virtual {v8, v6}, Lcom/krux/androidsdk/c/a/d/a;->a(Z)Lcom/krux/androidsdk/c/ac$a;
+
+    move-result-object v7
+
+    iput-object v0, v7, Lcom/krux/androidsdk/c/ac$a;->a:Lcom/krux/androidsdk/c/aa;
+
+    invoke-virtual {v7}, Lcom/krux/androidsdk/c/ac$a;->a()Lcom/krux/androidsdk/c/ac;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/krux/androidsdk/c/a/c/e;->a(Lcom/krux/androidsdk/c/ac;)J
+
+    move-result-wide v12
+
+    const-wide/16 v14, -0x1
+
+    cmp-long v7, v12, v14
+
+    if-nez v7, :cond_4
+
+    const-wide/16 v12, 0x0
+
+    :cond_4
+    invoke-virtual {v8, v12, v13}, Lcom/krux/androidsdk/c/a/d/a;->a(J)Lcom/krux/androidsdk/d/r;
+
+    move-result-object v7
+
+    const v8, 0x7fffffff
+
+    sget-object v9, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-static {v7, v8, v9}, Lcom/krux/androidsdk/c/a/c;->a(Lcom/krux/androidsdk/d/r;ILjava/util/concurrent/TimeUnit;)Z
+
+    invoke-interface {v7}, Lcom/krux/androidsdk/d/r;->close()V
+
+    iget v7, v0, Lcom/krux/androidsdk/c/ac;->c:I
+
+    const/16 v8, 0xc8
+
+    if-eq v7, v8, :cond_6
+
+    const/16 v8, 0x197
+
+    if-eq v7, v8, :cond_5
+
+    new-instance v7, Ljava/io/IOException;
+
+    new-instance v8, Ljava/lang/StringBuilder;
+
+    const-string v9, "Unexpected response code for CONNECT: "
+
+    invoke-direct {v8, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget v0, v0, Lcom/krux/androidsdk/c/ac;->c:I
+
+    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v7, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw v7
+
+    :cond_5
+    iget-object v0, v1, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/c;->a:Lcom/krux/androidsdk/c/a;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/a;->d:Lcom/krux/androidsdk/c/e;
+
+    invoke-interface {v0}, Lcom/krux/androidsdk/c/e;->a()Lcom/krux/androidsdk/c/aa;
+
+    new-instance v0, Ljava/io/IOException;
+
+    const-string v7, "Failed to authenticate with proxy"
+
+    invoke-direct {v0, v7}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_6
+    iget-object v0, v1, Lcom/krux/androidsdk/c/a/b/c;->e:Lcom/krux/androidsdk/d/e;
+
+    invoke-interface {v0}, Lcom/krux/androidsdk/d/e;->b()Lcom/krux/androidsdk/d/c;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/krux/androidsdk/d/c;->c()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    iget-object v0, v1, Lcom/krux/androidsdk/c/a/b/c;->f:Lcom/krux/androidsdk/d/d;
+
+    invoke-interface {v0}, Lcom/krux/androidsdk/d/d;->b()Lcom/krux/androidsdk/d/c;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/krux/androidsdk/d/c;->c()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    goto :goto_3
+
+    :cond_7
+    new-instance v0, Ljava/io/IOException;
+
+    const-string v7, "TLS tunnel buffered too many bytes!"
+
+    invoke-direct {v0, v7}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :catch_0
+    move-exception v0
+
+    goto/16 :goto_5
+
+    :cond_8
+    move/from16 v10, p2
+
+    move/from16 v11, p3
+
+    invoke-direct/range {p0 .. p2}, Lcom/krux/androidsdk/c/a/b/c;->a(II)V
+
+    :goto_3
+    iget-object v0, v1, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/c;->a:Lcom/krux/androidsdk/c/a;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/a;->i:Ljavax/net/ssl/SSLSocketFactory;
+
+    if-nez v0, :cond_9
+
+    sget-object v0, Lcom/krux/androidsdk/c/y;->b:Lcom/krux/androidsdk/c/y;
+
+    iput-object v0, v1, Lcom/krux/androidsdk/c/a/b/c;->o:Lcom/krux/androidsdk/c/y;
+
+    iget-object v0, v1, Lcom/krux/androidsdk/c/a/b/c;->n:Ljava/net/Socket;
+
+    iput-object v0, v1, Lcom/krux/androidsdk/c/a/b/c;->b:Ljava/net/Socket;
+
+    goto :goto_4
+
+    :cond_9
+    invoke-direct {v1, v2}, Lcom/krux/androidsdk/c/a/b/c;->a(Lcom/krux/androidsdk/c/a/b/b;)V
+
+    iget-object v0, v1, Lcom/krux/androidsdk/c/a/b/c;->o:Lcom/krux/androidsdk/c/y;
+
+    sget-object v7, Lcom/krux/androidsdk/c/y;->d:Lcom/krux/androidsdk/c/y;
+
+    if-ne v0, v7, :cond_b
+
+    iget-object v0, v1, Lcom/krux/androidsdk/c/a/b/c;->b:Ljava/net/Socket;
+
+    invoke-virtual {v0, v6}, Ljava/net/Socket;->setSoTimeout(I)V
+
+    new-instance v0, Lcom/krux/androidsdk/c/a/e/g$a;
+
+    invoke-direct {v0}, Lcom/krux/androidsdk/c/a/e/g$a;-><init>()V
+
+    iget-object v7, v1, Lcom/krux/androidsdk/c/a/b/c;->b:Ljava/net/Socket;
+
+    iget-object v8, v1, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v8, v8, Lcom/krux/androidsdk/c/c;->a:Lcom/krux/androidsdk/c/a;
+
+    iget-object v8, v8, Lcom/krux/androidsdk/c/a;->a:Lcom/krux/androidsdk/c/u;
+
+    iget-object v8, v8, Lcom/krux/androidsdk/c/u;->b:Ljava/lang/String;
+
+    iget-object v9, v1, Lcom/krux/androidsdk/c/a/b/c;->e:Lcom/krux/androidsdk/d/e;
+
+    iget-object v12, v1, Lcom/krux/androidsdk/c/a/b/c;->f:Lcom/krux/androidsdk/d/d;
+
+    iput-object v7, v0, Lcom/krux/androidsdk/c/a/e/g$a;->a:Ljava/net/Socket;
+
+    iput-object v8, v0, Lcom/krux/androidsdk/c/a/e/g$a;->b:Ljava/lang/String;
+
+    iput-object v9, v0, Lcom/krux/androidsdk/c/a/e/g$a;->c:Lcom/krux/androidsdk/d/e;
+
+    iput-object v12, v0, Lcom/krux/androidsdk/c/a/e/g$a;->d:Lcom/krux/androidsdk/d/d;
+
+    iput-object v1, v0, Lcom/krux/androidsdk/c/a/e/g$a;->e:Lcom/krux/androidsdk/c/a/e/g$b;
+
+    new-instance v7, Lcom/krux/androidsdk/c/a/e/g;
+
+    invoke-direct {v7, v0}, Lcom/krux/androidsdk/c/a/e/g;-><init>(Lcom/krux/androidsdk/c/a/e/g$a;)V
+
+    iput-object v7, v1, Lcom/krux/androidsdk/c/a/b/c;->d:Lcom/krux/androidsdk/c/a/e/g;
+
+    iget-object v0, v1, Lcom/krux/androidsdk/c/a/b/c;->d:Lcom/krux/androidsdk/c/a/e/g;
+
+    iget-object v7, v0, Lcom/krux/androidsdk/c/a/e/g;->q:Lcom/krux/androidsdk/c/a/e/j;
+
+    invoke-virtual {v7}, Lcom/krux/androidsdk/c/a/e/j;->a()V
+
+    iget-object v7, v0, Lcom/krux/androidsdk/c/a/e/g;->q:Lcom/krux/androidsdk/c/a/e/j;
+
+    iget-object v8, v0, Lcom/krux/androidsdk/c/a/e/g;->m:Lcom/krux/androidsdk/c/a/e/n;
+
+    invoke-virtual {v7, v8}, Lcom/krux/androidsdk/c/a/e/j;->b(Lcom/krux/androidsdk/c/a/e/n;)V
+
+    iget-object v7, v0, Lcom/krux/androidsdk/c/a/e/g;->m:Lcom/krux/androidsdk/c/a/e/n;
+
+    invoke-virtual {v7}, Lcom/krux/androidsdk/c/a/e/n;->b()I
+
+    move-result v7
+
+    const v8, 0xffff
+
+    if-eq v7, v8, :cond_a
+
+    iget-object v9, v0, Lcom/krux/androidsdk/c/a/e/g;->q:Lcom/krux/androidsdk/c/a/e/j;
+
+    sub-int/2addr v7, v8
+
+    int-to-long v7, v7
+
+    invoke-virtual {v9, v6, v7, v8}, Lcom/krux/androidsdk/c/a/e/j;->a(IJ)V
+
+    :cond_a
+    new-instance v7, Ljava/lang/Thread;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/a/e/g;->r:Lcom/krux/androidsdk/c/a/e/g$c;
+
+    invoke-direct {v7, v0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+
+    invoke-virtual {v7}, Ljava/lang/Thread;->start()V
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
+
+    :cond_b
+    :goto_4
+    iget-object v0, v1, Lcom/krux/androidsdk/c/a/b/c;->d:Lcom/krux/androidsdk/c/a/e/g;
+
+    if-eqz v0, :cond_c
+
+    iget-object v2, v1, Lcom/krux/androidsdk/c/a/b/c;->m:Lcom/krux/androidsdk/c/l;
+
+    monitor-enter v2
+
+    :try_start_3
+    iget-object v0, v1, Lcom/krux/androidsdk/c/a/b/c;->d:Lcom/krux/androidsdk/c/a/e/g;
+
+    invoke-virtual {v0}, Lcom/krux/androidsdk/c/a/e/g;->a()I
+
+    move-result v0
+
+    iput v0, v1, Lcom/krux/androidsdk/c/a/b/c;->i:I
+
+    monitor-exit v2
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v2
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    throw v0
+
+    :cond_c
+    return-void
+
+    :catch_1
+    move-exception v0
+
+    goto :goto_6
+
+    :catch_2
+    move-exception v0
+
+    move/from16 v10, p2
+
+    :goto_5
+    move/from16 v11, p3
+
+    :goto_6
+    iget-object v7, v1, Lcom/krux/androidsdk/c/a/b/c;->b:Ljava/net/Socket;
+
+    invoke-static {v7}, Lcom/krux/androidsdk/c/a/c;->a(Ljava/net/Socket;)V
+
+    iget-object v7, v1, Lcom/krux/androidsdk/c/a/b/c;->n:Ljava/net/Socket;
+
+    invoke-static {v7}, Lcom/krux/androidsdk/c/a/c;->a(Ljava/net/Socket;)V
+
+    iput-object v3, v1, Lcom/krux/androidsdk/c/a/b/c;->b:Ljava/net/Socket;
+
+    iput-object v3, v1, Lcom/krux/androidsdk/c/a/b/c;->n:Ljava/net/Socket;
+
+    iput-object v3, v1, Lcom/krux/androidsdk/c/a/b/c;->e:Lcom/krux/androidsdk/d/e;
+
+    iput-object v3, v1, Lcom/krux/androidsdk/c/a/b/c;->f:Lcom/krux/androidsdk/d/d;
+
+    iput-object v3, v1, Lcom/krux/androidsdk/c/a/b/c;->c:Lcom/krux/androidsdk/c/s;
+
+    iput-object v3, v1, Lcom/krux/androidsdk/c/a/b/c;->o:Lcom/krux/androidsdk/c/y;
+
+    iput-object v3, v1, Lcom/krux/androidsdk/c/a/b/c;->d:Lcom/krux/androidsdk/c/a/e/g;
+
+    if-nez v4, :cond_d
+
+    new-instance v4, Lcom/krux/androidsdk/c/a/b/e;
+
+    invoke-direct {v4, v0}, Lcom/krux/androidsdk/c/a/b/e;-><init>(Ljava/io/IOException;)V
+
+    goto :goto_7
+
+    :cond_d
+    iget-object v7, v4, Lcom/krux/androidsdk/c/a/b/e;->a:Ljava/io/IOException;
+
+    invoke-static {v0, v7}, Lcom/krux/androidsdk/c/a/b/e;->a(Ljava/io/IOException;Ljava/io/IOException;)V
+
+    iput-object v0, v4, Lcom/krux/androidsdk/c/a/b/e;->a:Ljava/io/IOException;
+
+    :goto_7
+    if-eqz p4, :cond_11
+
+    iput-boolean v5, v2, Lcom/krux/androidsdk/c/a/b/b;->d:Z
+
+    iget-boolean v7, v2, Lcom/krux/androidsdk/c/a/b/b;->c:Z
+
+    if-eqz v7, :cond_f
+
+    instance-of v7, v0, Ljava/net/ProtocolException;
+
+    if-nez v7, :cond_f
+
+    instance-of v7, v0, Ljava/io/InterruptedIOException;
+
+    if-nez v7, :cond_f
+
+    instance-of v7, v0, Ljavax/net/ssl/SSLHandshakeException;
+
+    if-eqz v7, :cond_e
+
+    invoke-virtual {v0}, Ljava/io/IOException;->getCause()Ljava/lang/Throwable;
+
+    move-result-object v8
+
+    instance-of v8, v8, Ljava/security/cert/CertificateException;
+
+    if-nez v8, :cond_f
+
+    :cond_e
+    instance-of v8, v0, Ljavax/net/ssl/SSLPeerUnverifiedException;
+
+    if-nez v8, :cond_f
+
+    if-nez v7, :cond_10
+
+    instance-of v0, v0, Ljavax/net/ssl/SSLProtocolException;
+
+    if-eqz v0, :cond_f
+
+    goto :goto_8
+
+    :cond_f
+    const/4 v5, 0x0
+
+    :cond_10
+    :goto_8
+    if-eqz v5, :cond_11
+
+    goto/16 :goto_1
+
+    :cond_11
+    throw v4
+
+    :cond_12
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v2, "already connected"
+
+    invoke-direct {v0, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    return-void
+.end method
+
+.method public final a(Lcom/krux/androidsdk/c/a/e/g;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->m:Lcom/krux/androidsdk/c/l;
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p1}, Lcom/krux/androidsdk/c/a/e/g;->a()I
+
+    move-result p1
+
+    iput p1, p0, Lcom/krux/androidsdk/c/a/b/c;->i:I
+
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+.end method
+
+.method public final a(Lcom/krux/androidsdk/c/a/e/i;)V
+    .locals 1
+
+    sget-object v0, Lcom/krux/androidsdk/c/a/e/b;->e:Lcom/krux/androidsdk/c/a/e/b;
+
+    invoke-virtual {p1, v0}, Lcom/krux/androidsdk/c/a/e/i;->a(Lcom/krux/androidsdk/c/a/e/b;)V
+
+    return-void
+.end method
+
+.method public final a(Lcom/krux/androidsdk/c/a;Lcom/krux/androidsdk/c/c;)Z
+    .locals 4
+
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->j:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    iget v1, p0, Lcom/krux/androidsdk/c/a/b/c;->i:I
+
+    const/4 v2, 0x0
+
+    if-ge v0, v1, :cond_a
+
+    iget-boolean v0, p0, Lcom/krux/androidsdk/c/a/b/c;->g:Z
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    sget-object v0, Lcom/krux/androidsdk/c/a/a;->a:Lcom/krux/androidsdk/c/a/a;
+
+    iget-object v1, p0, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/c;->a:Lcom/krux/androidsdk/c/a;
+
+    invoke-virtual {v0, v1, p1}, Lcom/krux/androidsdk/c/a/a;->a(Lcom/krux/androidsdk/c/a;Lcom/krux/androidsdk/c/a;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    return v2
+
+    :cond_1
+    iget-object v0, p1, Lcom/krux/androidsdk/c/a;->a:Lcom/krux/androidsdk/c/u;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/u;->b:Ljava/lang/String;
+
+    iget-object v1, p0, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/c;->a:Lcom/krux/androidsdk/c/a;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/a;->a:Lcom/krux/androidsdk/c/u;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/u;->b:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-eqz v0, :cond_2
+
+    return v1
+
+    :cond_2
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->d:Lcom/krux/androidsdk/c/a/e/g;
+
+    if-nez v0, :cond_3
+
+    return v2
+
+    :cond_3
+    if-nez p2, :cond_4
+
+    return v2
+
+    :cond_4
+    iget-object v0, p2, Lcom/krux/androidsdk/c/c;->b:Ljava/net/Proxy;
+
+    invoke-virtual {v0}, Ljava/net/Proxy;->type()Ljava/net/Proxy$Type;
+
+    move-result-object v0
+
+    sget-object v3, Ljava/net/Proxy$Type;->DIRECT:Ljava/net/Proxy$Type;
+
+    if-eq v0, v3, :cond_5
+
+    return v2
+
+    :cond_5
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/c;->b:Ljava/net/Proxy;
+
+    invoke-virtual {v0}, Ljava/net/Proxy;->type()Ljava/net/Proxy$Type;
+
+    move-result-object v0
+
+    sget-object v3, Ljava/net/Proxy$Type;->DIRECT:Ljava/net/Proxy$Type;
+
+    if-eq v0, v3, :cond_6
+
+    return v2
+
+    :cond_6
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/c;->c:Ljava/net/InetSocketAddress;
+
+    iget-object v3, p2, Lcom/krux/androidsdk/c/c;->c:Ljava/net/InetSocketAddress;
+
+    invoke-virtual {v0, v3}, Ljava/net/InetSocketAddress;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_7
+
+    return v2
+
+    :cond_7
+    iget-object p2, p2, Lcom/krux/androidsdk/c/c;->a:Lcom/krux/androidsdk/c/a;
+
+    iget-object p2, p2, Lcom/krux/androidsdk/c/a;->j:Ljavax/net/ssl/HostnameVerifier;
+
+    sget-object v0, Lcom/krux/androidsdk/c/a/i/d;->a:Lcom/krux/androidsdk/c/a/i/d;
+
+    if-eq p2, v0, :cond_8
+
+    return v2
+
+    :cond_8
+    iget-object p2, p1, Lcom/krux/androidsdk/c/a;->a:Lcom/krux/androidsdk/c/u;
+
+    invoke-virtual {p0, p2}, Lcom/krux/androidsdk/c/a/b/c;->a(Lcom/krux/androidsdk/c/u;)Z
+
+    move-result p2
+
+    if-nez p2, :cond_9
+
+    return v2
+
+    :cond_9
+    :try_start_0
+    iget-object p2, p1, Lcom/krux/androidsdk/c/a;->k:Lcom/krux/androidsdk/c/i;
+
+    iget-object p1, p1, Lcom/krux/androidsdk/c/a;->a:Lcom/krux/androidsdk/c/u;
+
+    iget-object p1, p1, Lcom/krux/androidsdk/c/u;->b:Ljava/lang/String;
+
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->c:Lcom/krux/androidsdk/c/s;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/s;->b:Ljava/util/List;
+
+    invoke-virtual {p2, p1, v0}, Lcom/krux/androidsdk/c/i;->a(Ljava/lang/String;Ljava/util/List;)V
+    :try_end_0
+    .catch Ljavax/net/ssl/SSLPeerUnverifiedException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return v1
+
+    :catch_0
+    :cond_a
+    :goto_0
+    return v2
+.end method
+
+.method public final a(Lcom/krux/androidsdk/c/u;)Z
+    .locals 3
+
+    iget v0, p1, Lcom/krux/androidsdk/c/u;->c:I
+
+    iget-object v1, p0, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/c;->a:Lcom/krux/androidsdk/c/a;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/a;->a:Lcom/krux/androidsdk/c/u;
+
+    iget v1, v1, Lcom/krux/androidsdk/c/u;->c:I
+
+    const/4 v2, 0x0
+
+    if-eq v0, v1, :cond_0
+
+    return v2
+
+    :cond_0
+    iget-object v0, p1, Lcom/krux/androidsdk/c/u;->b:Ljava/lang/String;
+
+    iget-object v1, p0, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/c;->a:Lcom/krux/androidsdk/c/a;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/a;->a:Lcom/krux/androidsdk/c/u;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/u;->b:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-nez v0, :cond_2
+
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->c:Lcom/krux/androidsdk/c/s;
+
+    if-eqz v0, :cond_1
+
+    sget-object v0, Lcom/krux/androidsdk/c/a/i/d;->a:Lcom/krux/androidsdk/c/a/i/d;
+
+    iget-object p1, p1, Lcom/krux/androidsdk/c/u;->b:Ljava/lang/String;
+
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->c:Lcom/krux/androidsdk/c/s;
+
+    iget-object v0, v0, Lcom/krux/androidsdk/c/s;->b:Ljava/util/List;
+
+    invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/security/cert/X509Certificate;
+
+    invoke-static {p1, v0}, Lcom/krux/androidsdk/c/a/i/d;->a(Ljava/lang/String;Ljava/security/cert/X509Certificate;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    return v1
+
+    :cond_1
+    return v2
+
+    :cond_2
+    return v1
+.end method
+
+.method public final a(Z)Z
+    .locals 4
+
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->b:Ljava/net/Socket;
+
+    invoke-virtual {v0}, Ljava/net/Socket;->isClosed()Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_5
+
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->b:Ljava/net/Socket;
+
+    invoke-virtual {v0}, Ljava/net/Socket;->isInputShutdown()Z
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->b:Ljava/net/Socket;
+
+    invoke-virtual {v0}, Ljava/net/Socket;->isOutputShutdown()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->d:Lcom/krux/androidsdk/c/a/e/g;
+
+    const/4 v2, 0x1
+
+    if-eqz v0, :cond_2
+
+    invoke-virtual {v0}, Lcom/krux/androidsdk/c/a/e/g;->b()Z
+
+    move-result p1
+
+    if-nez p1, :cond_1
+
+    return v2
+
+    :cond_1
+    return v1
+
+    :cond_2
+    if-eqz p1, :cond_4
+
+    :try_start_0
+    iget-object p1, p0, Lcom/krux/androidsdk/c/a/b/c;->b:Ljava/net/Socket;
+
+    invoke-virtual {p1}, Ljava/net/Socket;->getSoTimeout()I
+
+    move-result p1
+    :try_end_0
+    .catch Ljava/net/SocketTimeoutException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :try_start_1
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->b:Ljava/net/Socket;
+
+    invoke-virtual {v0, v2}, Ljava/net/Socket;->setSoTimeout(I)V
+
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->e:Lcom/krux/androidsdk/d/e;
+
+    invoke-interface {v0}, Lcom/krux/androidsdk/d/e;->c()Z
+
+    move-result v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    if-eqz v0, :cond_3
+
+    :try_start_2
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->b:Ljava/net/Socket;
+
+    invoke-virtual {v0, p1}, Ljava/net/Socket;->setSoTimeout(I)V
+
+    return v1
+
+    :cond_3
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->b:Ljava/net/Socket;
+
+    invoke-virtual {v0, p1}, Ljava/net/Socket;->setSoTimeout(I)V
+
+    return v2
+
+    :catchall_0
+    move-exception v0
+
+    iget-object v3, p0, Lcom/krux/androidsdk/c/a/b/c;->b:Ljava/net/Socket;
+
+    invoke-virtual {v3, p1}, Ljava/net/Socket;->setSoTimeout(I)V
+
+    throw v0
+    :try_end_2
+    .catch Ljava/net/SocketTimeoutException; {:try_start_2 .. :try_end_2} :catch_1
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
+
+    :catch_0
+    return v1
+
+    :catch_1
+    :cond_4
+    return v2
+
+    :cond_5
+    :goto_0
+    return v1
+.end method
+
+.method public final b()Z
+    .locals 1
+
+    iget-object v0, p0, Lcom/krux/androidsdk/c/a/b/c;->d:Lcom/krux/androidsdk/c/a/e/g;
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "Connection{"
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/c;->a:Lcom/krux/androidsdk/c/a;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/a;->a:Lcom/krux/androidsdk/c/u;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/u;->b:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ":"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/c;->a:Lcom/krux/androidsdk/c/a;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/a;->a:Lcom/krux/androidsdk/c/u;
+
+    iget v1, v1, Lcom/krux/androidsdk/c/u;->c:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", proxy="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/c;->b:Ljava/net/Proxy;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, " hostAddress="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/krux/androidsdk/c/a/b/c;->a:Lcom/krux/androidsdk/c/c;
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/c;->c:Ljava/net/InetSocketAddress;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, " cipherSuite="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/krux/androidsdk/c/a/b/c;->c:Lcom/krux/androidsdk/c/s;
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, v1, Lcom/krux/androidsdk/c/s;->a:Lcom/krux/androidsdk/c/j;
+
+    goto :goto_0
+
+    :cond_0
+    const-string v1, "none"
+
+    :goto_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, " protocol="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/krux/androidsdk/c/a/b/c;->o:Lcom/krux/androidsdk/c/y;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x7d
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

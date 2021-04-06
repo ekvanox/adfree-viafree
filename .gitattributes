@@ -1,0 +1,1 @@
+git[[:space:]]lfs[[:space:]]track[[:space:]]patched_source/** filter=lfs diff=lfs merge=lfs -text
