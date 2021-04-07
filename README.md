@@ -46,9 +46,10 @@ To verify that nothing else has been modified the apk can be built manually, fro
 
 ## Common errors
 ### Signature check mismatch
-**Cause**
+**Cause** <br>
 Caused by a official viafree version being overwritten by a patched version
-**Fix**
+
+**Fix** <br>
 Uninstall all viafree versions from the device before installing `viafree-android-no-ads.apk`
 
 ## Licence
