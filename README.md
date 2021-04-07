@@ -27,22 +27,22 @@ To verify that nothing else has been modified the apk can be built manually, fro
 * [Android debug bridge](https://developer.android.com/studio/releases/platform-tools) [Optional] 
 ### Instructions
 
-**Download adfree-viafree repository**
+**Download adfree-viafree repository** <br>
 `git clone https://github.com/ekvanox/adfree-viafree.git`
 
-**Change working directory**
+**Change working directory** <br>
 `cd adfree-viafree/{prefered-viafree-version}`
 
-**Build with apktool**
+**Build with apktool** <br>
 `apktool b -r -f patched_source`
 
-**Sign APK**
+**Sign APK** <br>
 `java -jar uber-apk-signer.jar --apks patched_source/dist/patched_source.apk`
 
-**[Optional] Install over ADB**
+**[Optional] Install over ADB** <br>
 `adb install patched_source-aligned-debugSigned.apk`
 
-*For version specific build details, please check the readme for the latest release*
+*For version specific build details, please check the readme included in the associated release*
 
 ## Common errors
 ### Signature check mismatch
