@@ -1,0 +1,82 @@
+.class Landroidx/leanback/app/p$b;
+.super Ljava/lang/Object;
+.source "VerticalGridSupportFragment.java"
+
+# interfaces
+.implements Landroidx/leanback/widget/v0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/leanback/app/p;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Landroidx/leanback/app/p;
+
+
+# direct methods
+.method constructor <init>(Landroidx/leanback/app/p;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Landroidx/leanback/app/p$b;->a:Landroidx/leanback/app/p;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Landroidx/leanback/widget/a1$a;Ljava/lang/Object;Landroidx/leanback/widget/i1$b;Landroidx/leanback/widget/g1;)V
+    .locals 2
+
+    .line 2
+    iget-object v0, p0, Landroidx/leanback/app/p$b;->a:Landroidx/leanback/app/p;
+
+    iget-object v0, v0, Landroidx/leanback/app/p;->C:Landroidx/leanback/widget/x1$c;
+
+    invoke-virtual {v0}, Landroidx/leanback/widget/x1$c;->a()Landroidx/leanback/widget/VerticalGridView;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/leanback/widget/e;->getSelectedPosition()I
+
+    move-result v0
+
+    .line 3
+    iget-object v1, p0, Landroidx/leanback/app/p$b;->a:Landroidx/leanback/app/p;
+
+    invoke-virtual {v1, v0}, Landroidx/leanback/app/p;->d(I)V
+
+    .line 4
+    iget-object v0, p0, Landroidx/leanback/app/p$b;->a:Landroidx/leanback/app/p;
+
+    iget-object v0, v0, Landroidx/leanback/app/p;->D:Landroidx/leanback/widget/v0;
+
+    if-eqz v0, :cond_0
+
+    .line 5
+    invoke-interface {v0, p1, p2, p3, p4}, Landroidx/leanback/widget/g;->a(Landroidx/leanback/widget/a1$a;Ljava/lang/Object;Landroidx/leanback/widget/i1$b;Ljava/lang/Object;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public bridge synthetic a(Landroidx/leanback/widget/a1$a;Ljava/lang/Object;Landroidx/leanback/widget/i1$b;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p4, Landroidx/leanback/widget/g1;
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Landroidx/leanback/app/p$b;->a(Landroidx/leanback/widget/a1$a;Ljava/lang/Object;Landroidx/leanback/widget/i1$b;Landroidx/leanback/widget/g1;)V
+
+    return-void
+.end method

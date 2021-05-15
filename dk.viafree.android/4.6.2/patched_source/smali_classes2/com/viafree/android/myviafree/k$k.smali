@@ -1,0 +1,401 @@
+.class final enum Lcom/viafree/android/myviafree/k$k;
+.super Ljava/lang/Enum;
+.source "MyViafreeAdapter.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/viafree/android/myviafree/k;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x4018
+    name = "k"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Lcom/viafree/android/myviafree/k$k;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final synthetic $VALUES:[Lcom/viafree/android/myviafree/k$k;
+
+.field public static final enum API_ENVIRONMENT:Lcom/viafree/android/myviafree/k$k;
+
+.field public static final enum CHANGE_EMAIL:Lcom/viafree/android/myviafree/k$k;
+
+.field public static final enum CHANGE_PASSWORD:Lcom/viafree/android/myviafree/k$k;
+
+.field public static final enum CUSTOMER_SUPPORT:Lcom/viafree/android/myviafree/k$k;
+
+.field public static final enum DEBUG_VIDEO:Lcom/viafree/android/myviafree/k$k;
+
+.field public static final enum DIVIDER:Lcom/viafree/android/myviafree/k$k;
+
+.field public static final enum FPS_MEASUREMENT:Lcom/viafree/android/myviafree/k$k;
+
+.field public static final enum LOGGED_IN:Lcom/viafree/android/myviafree/k$k;
+
+.field public static final enum LOGIN_SIGNUP_PHONE:Lcom/viafree/android/myviafree/k$k;
+
+.field public static final enum LOGIN_SIGNUP_TABLET:Lcom/viafree/android/myviafree/k$k;
+
+.field public static final enum LOGOUT:Lcom/viafree/android/myviafree/k$k;
+
+.field public static final enum NOTIFICATIONS:Lcom/viafree/android/myviafree/k$k;
+
+.field public static final enum PUSH_TOKEN:Lcom/viafree/android/myviafree/k$k;
+
+.field public static final enum SKIP_ADS:Lcom/viafree/android/myviafree/k$k;
+
+.field public static final enum STATIC_PAGE:Lcom/viafree/android/myviafree/k$k;
+
+.field public static final enum USABILITY_RECRUITMENT:Lcom/viafree/android/myviafree/k$k;
+
+.field public static final enum USER_DETAILS:Lcom/viafree/android/myviafree/k$k;
+
+.field public static final enum VERSION:Lcom/viafree/android/myviafree/k$k;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 16
+
+    .line 1
+    new-instance v0, Lcom/viafree/android/myviafree/k$k;
+
+    const/4 v1, 0x0
+
+    const-string v2, "LOGIN_SIGNUP_PHONE"
+
+    invoke-direct {v0, v2, v1}, Lcom/viafree/android/myviafree/k$k;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->LOGIN_SIGNUP_PHONE:Lcom/viafree/android/myviafree/k$k;
+
+    .line 2
+    new-instance v0, Lcom/viafree/android/myviafree/k$k;
+
+    const/4 v2, 0x1
+
+    const-string v3, "LOGIN_SIGNUP_TABLET"
+
+    invoke-direct {v0, v3, v2}, Lcom/viafree/android/myviafree/k$k;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->LOGIN_SIGNUP_TABLET:Lcom/viafree/android/myviafree/k$k;
+
+    .line 3
+    new-instance v0, Lcom/viafree/android/myviafree/k$k;
+
+    const/4 v3, 0x2
+
+    const-string v4, "LOGGED_IN"
+
+    invoke-direct {v0, v4, v3}, Lcom/viafree/android/myviafree/k$k;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->LOGGED_IN:Lcom/viafree/android/myviafree/k$k;
+
+    .line 4
+    new-instance v0, Lcom/viafree/android/myviafree/k$k;
+
+    const/4 v4, 0x3
+
+    const-string v5, "USER_DETAILS"
+
+    invoke-direct {v0, v5, v4}, Lcom/viafree/android/myviafree/k$k;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->USER_DETAILS:Lcom/viafree/android/myviafree/k$k;
+
+    .line 5
+    new-instance v0, Lcom/viafree/android/myviafree/k$k;
+
+    const/4 v5, 0x4
+
+    const-string v6, "CHANGE_PASSWORD"
+
+    invoke-direct {v0, v6, v5}, Lcom/viafree/android/myviafree/k$k;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->CHANGE_PASSWORD:Lcom/viafree/android/myviafree/k$k;
+
+    .line 6
+    new-instance v0, Lcom/viafree/android/myviafree/k$k;
+
+    const/4 v6, 0x5
+
+    const-string v7, "CHANGE_EMAIL"
+
+    invoke-direct {v0, v7, v6}, Lcom/viafree/android/myviafree/k$k;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->CHANGE_EMAIL:Lcom/viafree/android/myviafree/k$k;
+
+    .line 7
+    new-instance v0, Lcom/viafree/android/myviafree/k$k;
+
+    const/4 v7, 0x6
+
+    const-string v8, "NOTIFICATIONS"
+
+    invoke-direct {v0, v8, v7}, Lcom/viafree/android/myviafree/k$k;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->NOTIFICATIONS:Lcom/viafree/android/myviafree/k$k;
+
+    .line 8
+    new-instance v0, Lcom/viafree/android/myviafree/k$k;
+
+    const/4 v8, 0x7
+
+    const-string v9, "CUSTOMER_SUPPORT"
+
+    invoke-direct {v0, v9, v8}, Lcom/viafree/android/myviafree/k$k;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->CUSTOMER_SUPPORT:Lcom/viafree/android/myviafree/k$k;
+
+    .line 9
+    new-instance v0, Lcom/viafree/android/myviafree/k$k;
+
+    const/16 v9, 0x8
+
+    const-string v10, "USABILITY_RECRUITMENT"
+
+    invoke-direct {v0, v10, v9}, Lcom/viafree/android/myviafree/k$k;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->USABILITY_RECRUITMENT:Lcom/viafree/android/myviafree/k$k;
+
+    .line 10
+    new-instance v0, Lcom/viafree/android/myviafree/k$k;
+
+    const/16 v10, 0x9
+
+    const-string v11, "LOGOUT"
+
+    invoke-direct {v0, v11, v10}, Lcom/viafree/android/myviafree/k$k;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->LOGOUT:Lcom/viafree/android/myviafree/k$k;
+
+    .line 11
+    new-instance v0, Lcom/viafree/android/myviafree/k$k;
+
+    const/16 v11, 0xa
+
+    const-string v12, "STATIC_PAGE"
+
+    invoke-direct {v0, v12, v11}, Lcom/viafree/android/myviafree/k$k;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->STATIC_PAGE:Lcom/viafree/android/myviafree/k$k;
+
+    .line 12
+    new-instance v0, Lcom/viafree/android/myviafree/k$k;
+
+    const/16 v12, 0xb
+
+    const-string v13, "VERSION"
+
+    invoke-direct {v0, v13, v12}, Lcom/viafree/android/myviafree/k$k;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->VERSION:Lcom/viafree/android/myviafree/k$k;
+
+    .line 13
+    new-instance v0, Lcom/viafree/android/myviafree/k$k;
+
+    const/16 v13, 0xc
+
+    const-string v14, "DIVIDER"
+
+    invoke-direct {v0, v14, v13}, Lcom/viafree/android/myviafree/k$k;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->DIVIDER:Lcom/viafree/android/myviafree/k$k;
+
+    .line 14
+    new-instance v0, Lcom/viafree/android/myviafree/k$k;
+
+    const/16 v14, 0xd
+
+    const-string v15, "API_ENVIRONMENT"
+
+    invoke-direct {v0, v15, v14}, Lcom/viafree/android/myviafree/k$k;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->API_ENVIRONMENT:Lcom/viafree/android/myviafree/k$k;
+
+    .line 15
+    new-instance v0, Lcom/viafree/android/myviafree/k$k;
+
+    const/16 v15, 0xe
+
+    const-string v14, "FPS_MEASUREMENT"
+
+    invoke-direct {v0, v14, v15}, Lcom/viafree/android/myviafree/k$k;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->FPS_MEASUREMENT:Lcom/viafree/android/myviafree/k$k;
+
+    .line 16
+    new-instance v0, Lcom/viafree/android/myviafree/k$k;
+
+    const-string v14, "PUSH_TOKEN"
+
+    const/16 v15, 0xf
+
+    invoke-direct {v0, v14, v15}, Lcom/viafree/android/myviafree/k$k;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->PUSH_TOKEN:Lcom/viafree/android/myviafree/k$k;
+
+    .line 17
+    new-instance v0, Lcom/viafree/android/myviafree/k$k;
+
+    const-string v14, "DEBUG_VIDEO"
+
+    const/16 v15, 0x10
+
+    invoke-direct {v0, v14, v15}, Lcom/viafree/android/myviafree/k$k;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->DEBUG_VIDEO:Lcom/viafree/android/myviafree/k$k;
+
+    .line 18
+    new-instance v0, Lcom/viafree/android/myviafree/k$k;
+
+    const-string v14, "SKIP_ADS"
+
+    const/16 v15, 0x11
+
+    invoke-direct {v0, v14, v15}, Lcom/viafree/android/myviafree/k$k;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->SKIP_ADS:Lcom/viafree/android/myviafree/k$k;
+
+    const/16 v0, 0x12
+
+    new-array v0, v0, [Lcom/viafree/android/myviafree/k$k;
+
+    .line 19
+    sget-object v14, Lcom/viafree/android/myviafree/k$k;->LOGIN_SIGNUP_PHONE:Lcom/viafree/android/myviafree/k$k;
+
+    aput-object v14, v0, v1
+
+    sget-object v1, Lcom/viafree/android/myviafree/k$k;->LOGIN_SIGNUP_TABLET:Lcom/viafree/android/myviafree/k$k;
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/viafree/android/myviafree/k$k;->LOGGED_IN:Lcom/viafree/android/myviafree/k$k;
+
+    aput-object v1, v0, v3
+
+    sget-object v1, Lcom/viafree/android/myviafree/k$k;->USER_DETAILS:Lcom/viafree/android/myviafree/k$k;
+
+    aput-object v1, v0, v4
+
+    sget-object v1, Lcom/viafree/android/myviafree/k$k;->CHANGE_PASSWORD:Lcom/viafree/android/myviafree/k$k;
+
+    aput-object v1, v0, v5
+
+    sget-object v1, Lcom/viafree/android/myviafree/k$k;->CHANGE_EMAIL:Lcom/viafree/android/myviafree/k$k;
+
+    aput-object v1, v0, v6
+
+    sget-object v1, Lcom/viafree/android/myviafree/k$k;->NOTIFICATIONS:Lcom/viafree/android/myviafree/k$k;
+
+    aput-object v1, v0, v7
+
+    sget-object v1, Lcom/viafree/android/myviafree/k$k;->CUSTOMER_SUPPORT:Lcom/viafree/android/myviafree/k$k;
+
+    aput-object v1, v0, v8
+
+    sget-object v1, Lcom/viafree/android/myviafree/k$k;->USABILITY_RECRUITMENT:Lcom/viafree/android/myviafree/k$k;
+
+    aput-object v1, v0, v9
+
+    sget-object v1, Lcom/viafree/android/myviafree/k$k;->LOGOUT:Lcom/viafree/android/myviafree/k$k;
+
+    aput-object v1, v0, v10
+
+    sget-object v1, Lcom/viafree/android/myviafree/k$k;->STATIC_PAGE:Lcom/viafree/android/myviafree/k$k;
+
+    aput-object v1, v0, v11
+
+    sget-object v1, Lcom/viafree/android/myviafree/k$k;->VERSION:Lcom/viafree/android/myviafree/k$k;
+
+    aput-object v1, v0, v12
+
+    sget-object v1, Lcom/viafree/android/myviafree/k$k;->DIVIDER:Lcom/viafree/android/myviafree/k$k;
+
+    aput-object v1, v0, v13
+
+    sget-object v1, Lcom/viafree/android/myviafree/k$k;->API_ENVIRONMENT:Lcom/viafree/android/myviafree/k$k;
+
+    const/16 v2, 0xd
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/viafree/android/myviafree/k$k;->FPS_MEASUREMENT:Lcom/viafree/android/myviafree/k$k;
+
+    const/16 v2, 0xe
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/viafree/android/myviafree/k$k;->PUSH_TOKEN:Lcom/viafree/android/myviafree/k$k;
+
+    const/16 v2, 0xf
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/viafree/android/myviafree/k$k;->DEBUG_VIDEO:Lcom/viafree/android/myviafree/k$k;
+
+    const/16 v2, 0x10
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/viafree/android/myviafree/k$k;->SKIP_ADS:Lcom/viafree/android/myviafree/k$k;
+
+    const/16 v2, 0x11
+
+    aput-object v1, v0, v2
+
+    sput-object v0, Lcom/viafree/android/myviafree/k$k;->$VALUES:[Lcom/viafree/android/myviafree/k$k;
+
+    return-void
+.end method
+
+.method private constructor <init>(Ljava/lang/String;I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lcom/viafree/android/myviafree/k$k;
+    .locals 1
+
+    .line 1
+    const-class v0, Lcom/viafree/android/myviafree/k$k;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/viafree/android/myviafree/k$k;
+
+    return-object p0
+.end method
+
+.method public static values()[Lcom/viafree/android/myviafree/k$k;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/viafree/android/myviafree/k$k;->$VALUES:[Lcom/viafree/android/myviafree/k$k;
+
+    invoke-virtual {v0}, [Lcom/viafree/android/myviafree/k$k;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Lcom/viafree/android/myviafree/k$k;
+
+    return-object v0
+.end method

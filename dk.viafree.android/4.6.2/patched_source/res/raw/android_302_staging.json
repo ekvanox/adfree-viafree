@@ -1,0 +1,29 @@
+{
+  "sections": [
+    {
+      "canLazyLoad": false,
+      "links": {
+        "self": "https://playapi.mtgx.tv/v3/collections/779?country=dk"
+      },
+      "trackingName": "popular",
+      "type": "featureBox"
+    },
+    {
+      "links": {
+        "self": "https://staging.playapi.mtgx.tv/v3/videos/?country=dk&collection=779&order=-visible_from&limit=5"
+      },
+      "metadata": "airDate",
+      "title": "Senaste avsnitten",
+      "trackingName": "episodes",
+      "type": "episodes"
+    },
+    {
+      "links": {
+        "self": "https://staging.playapi.mtgx.tv/v3/formats/?country=dk&collection=779&order=-popularity"
+      },
+      "title": "Alla program",
+      "trackingName": "formats",
+      "type": "formatsGrid"
+    }
+  ]
+}

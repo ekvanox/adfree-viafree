@@ -1,0 +1,29 @@
+{
+  "sections": [
+    {
+      "canLazyLoad": false,
+      "links": {
+        "self": "https://free-collections.play.mtgx.tv/collections/{theme_id}"
+      },
+      "trackingName": "popular",
+      "type": "featureBox"
+    },
+    {
+      "links": {
+        "self": "https://playapi.mtgx.tv/v3/videos/?country=dk&collection={theme_id}&order=-visible_from&type=program&limit=5"
+      },
+      "metadata": "airDate",
+      "title": "Seneste episoder",
+      "trackingName": "episodes",
+      "type": "episodes"
+    },
+    {
+      "links": {
+        "self": "https://free-collections.play.mtgx.tv/collections/{theme_id}"
+      },
+      "title": "Alle programmer",
+      "trackingName": "formats",
+      "type": "formatsGrid"
+    }
+  ]
+}

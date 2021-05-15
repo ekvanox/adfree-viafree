@@ -1,0 +1,63 @@
+.class Landroidx/leanback/widget/SearchBar$b;
+.super Ljava/lang/Object;
+.source "SearchBar.java"
+
+# interfaces
+.implements Landroid/view/View$OnFocusChangeListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/leanback/widget/SearchBar;->onFinishInflate()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic b:Landroidx/leanback/widget/SearchBar;
+
+
+# direct methods
+.method constructor <init>(Landroidx/leanback/widget/SearchBar;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Landroidx/leanback/widget/SearchBar$b;->b:Landroidx/leanback/widget/SearchBar;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onFocusChange(Landroid/view/View;Z)V
+    .locals 0
+
+    if-eqz p2, :cond_0
+
+    .line 1
+    iget-object p1, p0, Landroidx/leanback/widget/SearchBar$b;->b:Landroidx/leanback/widget/SearchBar;
+
+    invoke-virtual {p1}, Landroidx/leanback/widget/SearchBar;->e()V
+
+    goto :goto_0
+
+    .line 2
+    :cond_0
+    iget-object p1, p0, Landroidx/leanback/widget/SearchBar$b;->b:Landroidx/leanback/widget/SearchBar;
+
+    invoke-virtual {p1}, Landroidx/leanback/widget/SearchBar;->a()V
+
+    .line 3
+    :goto_0
+    iget-object p1, p0, Landroidx/leanback/widget/SearchBar$b;->b:Landroidx/leanback/widget/SearchBar;
+
+    invoke-virtual {p1, p2}, Landroidx/leanback/widget/SearchBar;->a(Z)V
+
+    return-void
+.end method
