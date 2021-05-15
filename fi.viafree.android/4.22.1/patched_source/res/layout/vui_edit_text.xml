@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout android:theme="@style/vui_text_input_layout_appearance" android:textColorHint="@color/edit_text_hint_color" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="-4.0dip" app:helperTextTextAppearance="@style/vui_helper_text" app:hintTextAppearance="@style/vui_hint_text">
+        <com.google.android.material.textfield.TextInputEditText android:textAppearance="@style/vui_edit_text_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/vui_edit_text_extra_hint" android:layout_gravity="end|center|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.0" style="@style/vui_edit_text_extra_hint" />
+</FrameLayout>

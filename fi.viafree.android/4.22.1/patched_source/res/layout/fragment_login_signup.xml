@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/app_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:paddingLeft="@dimen/login_page_side_padding" android:paddingRight="@dimen/login_page_side_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/content_myviafree_login_signup" />
+    </FrameLayout>
+</ScrollView>

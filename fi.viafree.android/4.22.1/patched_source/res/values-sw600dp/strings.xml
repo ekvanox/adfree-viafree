@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="format_activity_image_aspect_ration">21:9</string>
+    <string name="sport_feature_item_aspect_ratio">768:398</string>
+</resources>

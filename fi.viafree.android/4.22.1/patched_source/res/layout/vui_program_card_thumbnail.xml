@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="0.0dip" app:cardCornerRadius="@dimen/general_radius" app:cardElevation="0.0dip" app:cardUseCompatPadding="false" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/card_thumbnail" android:background="@color/black10" android:layout_width="fill_parent" android:layout_height="0.0dip" android:minWidth="@dimen/card_width" app:layout_constraintDimensionRatio="16:9" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/card_channel_logo" android:layout_width="wrap_content" android:layout_height="@dimen/card_channel_height" android:layout_margin="@dimen/card_padding" android:scaleType="fitStart" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/card_action_button" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_margin="@dimen/card_padding" android:hapticFeedbackEnabled="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/card_play_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="parent" app:layout_constraintEnd_toStartOf="parent" app:layout_constraintStart_toEndOf="parent" app:layout_constraintTop_toBottomOf="parent" app:srcCompat="@drawable/vui_ic_play" />
+        <ProgressBar android:id="@id/card_progress" android:visibility="gone" android:layout_width="0.0dip" android:max="100" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/continueWatchingProgress" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/card_padding" app:layout_constraintBottom_toTopOf="@id/card_progress" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.viafree.viafreeandroidui.VUITextLabel android:ellipsize="end" android:id="@id/card_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:textAllCaps="true" app:vuiLabelType="broadcast_time" />
+            </FrameLayout>
+            <com.viafree.viafreeandroidui.VUITextLabel android:gravity="end" android:layout_gravity="end" android:id="@id/card_duration" android:layout_width="wrap_content" android:layout_height="@dimen/duration_height" app:vuiLabelType="duration" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

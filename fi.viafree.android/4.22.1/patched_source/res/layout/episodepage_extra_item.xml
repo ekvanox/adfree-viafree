@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/vui_selectable_thumbnail_bg"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingBottom="@dimen/default_spacing_large" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/episode_extra_item_image_container" android:layout_width="@dimen/default_list_image_width" android:layout_height="@dimen/default_list_image_height">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/episode_extra_item_image" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_play_icon_medium" />
+                <TextView android:id="@id/episode_extra_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_spacing_small" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:fontFamily="@font/mtg_sans_bold" android:layout_alignParentEnd="true" style="@style/extraItemDuration" />
+            </RelativeLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/episode_extra_subcontainer" android:paddingLeft="@dimen/default_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/episode_extra_item_image_container" android:paddingStart="@dimen/default_spacing" android:layout_toEndOf="@id/episode_extra_item_image_container">
+            <TextView android:textAppearance="@style/textDefault.Large.White" android:ellipsize="end" android:id="@id/episode_extra_title" android:paddingTop="0.0dip" android:paddingBottom="@dimen/default_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:fontFamily="@font/mtg_sans_black" />
+            <TextView android:textAppearance="@style/textDefault.White" android:ellipsize="end" android:id="@id/episode_extra_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:fontFamily="@font/mtg_sans_regular" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

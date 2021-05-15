@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="featurebox_image_offset_percentage">0.2</item>
+    <item type="dimen" name="featurebox_image_width_percentage">0.6</item>
+    <dimen name="format_continue_watching_tablet_img_height">208.0dip</dimen>
+    <dimen name="format_continue_watching_tablet_img_width">372.0dip</dimen>
+    <dimen name="sport_feature_item_left_padding">62.0dip</dimen>
+    <dimen name="sport_feature_item_right_padding">62.0dip</dimen>
+    <dimen name="sport_feature_item_top_padding">72.0dip</dimen>
+    <dimen name="continue_watching_item_progress_margin">30.0dip</dimen>
+    <dimen name="continue_watching_item_space">15.0dip</dimen>
+</resources>

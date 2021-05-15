@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/feature_item_image" android:background="@drawable/placeholder_16_9" android:layout_width="0.0dip" android:layout_height="0.0dip" android:foreground="?android:selectableItemBackground" android:scaleType="centerCrop" app:layout_constraintDimensionRatio="@string/sport_feature_item_aspect_ratio" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.viafree.android.common.custom_views.Swoosh android:id="@id/swoosh" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/feature_item_image" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/sport_feature_item_top_padding" android:paddingBottom="@dimen/sport_feature_item_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/sport_feature_item_left_padding" android:paddingEnd="@dimen/sport_feature_item_right_padding" app:layout_constraintTop_toBottomOf="@id/feature_item_image">
+        <TextView android:textAppearance="@style/SportTag3" android:id="@id/feature_item_competition" android:paddingTop="@dimen/default_spacing_large" android:layout_width="wrap_content" android:layout_height="wrap_content" app:textAllCaps="true" />
+        <TextView android:textAppearance="@style/Header3" android:ellipsize="end" android:id="@id/feature_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/Header3" />
+        <TextView android:textAppearance="@style/DescriptionText2" android:ellipsize="end" android:id="@id/feature_item_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="3" style="@style/DescriptionText2" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

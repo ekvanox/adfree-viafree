@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/complete_registation_swipe_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@color/app_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:paddingLeft="@dimen/login_page_side_padding" android:paddingTop="@dimen/login_page_top_padding" android:paddingRight="@dimen/login_page_side_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/complete_registration_layout" layout="@layout/content_complete_registration" />
+        </FrameLayout>
+    </ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/episode_info_dialog_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/episode_header" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/episode_container" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:id="@id/series_title" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/episode_title" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/EpisodeInfoSeriesTitle" />
+            <TextView android:id="@id/episode_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/series_title" style="@style/EpisodeInfoEpisodeTitle" />
+            <TextView android:id="@id/publishing_date" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/episode_title" style="@style/EpisodeInfoPublishDate" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/episode_container" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/separator_view" android:background="@drawable/episodes_separator_gradient" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/default_spacing_large" />
+            <ScrollView android:fadingEdgeLength="20.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="12.0dip" android:layout_weight="1.0" android:requiresFadingEdge="vertical">
+                <TextView android:id="@id/episode_description" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EpisodeInfoDescription" />
+            </ScrollView>
+            <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.viafree.viafreeandroidui.VUIButton android:id="@id/watch_episode" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/episode_info_watch_episode" android:drawableEnd="@drawable/ic_play_icon" android:drawableTint="@color/vui_button_filled_text_color" />
+                <com.viafree.viafreeandroidui.VUIButton android:textColor="@color/vermilion" android:id="@id/go_to_series_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/episode_info_go_to_series" android:layout_weight="1.0" android:drawableEnd="@drawable/ic_go_to_series" app:vuiButtonBackgroundType="outlined" />
+                <View android:id="@id/close_button_separator" android:background="@drawable/episodes_separator_gradient" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/default_spacing_large" />
+                <com.viafree.viafreeandroidui.VUIButton android:id="@id/episode_info_close_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/episode_info_dismiss" android:layout_weight="1.0" android:drawableEnd="@drawable/ic_close" app:vuiButtonBackgroundType="outlined" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

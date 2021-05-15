@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">64.0dip</dimen>
+    <dimen name="format_continue_watching_tablet_img_height">161.0dip</dimen>
+    <dimen name="format_continue_watching_tablet_img_width">286.0dip</dimen>
+    <dimen name="videoplayer_minimized_player_margin_side">64.0dip</dimen>
+    <dimen name="videoplayer_minimized_player_margin_vertical">64.0dip</dimen>
+</resources>

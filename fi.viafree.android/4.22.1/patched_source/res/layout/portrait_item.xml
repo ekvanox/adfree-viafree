@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageView android:id="@id/thumb" android:background="@color/placeholder" android:focusable="true" android:clickable="true" android:layout_width="@dimen/theme_portrait_image_width" android:layout_height="@dimen/theme_portrait_image_height" android:layout_marginRight="@dimen/default_spacing_extra_large" android:foreground="@drawable/vui_selectable_thumbnail_bg" android:scaleType="centerCrop" android:layout_marginEnd="@dimen/default_spacing_extra_large"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

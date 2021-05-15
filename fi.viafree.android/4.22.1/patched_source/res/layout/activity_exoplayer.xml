@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/root" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/theme_promo_placeholder" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/video_player_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/videoplayer_placeholder" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <Button android:id="@id/videoplayer_back_to_player" android:background="#ff191919" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/videoplayer_return_to_video" app:layout_constraintEnd_toEndOf="@id/videoplayer_placeholder" app:layout_constraintStart_toStartOf="@id/videoplayer_placeholder" app:layout_constraintTop_toBottomOf="@id/videoplayer_placeholder" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:id="@id/related_shows_background" android:background="@color/dark_semi_transparent" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.core.widget.NestedScrollView android:id="@id/related_shows_peek" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/player_bottom_related_shows_height" app:behavior_hideable="false" app:behavior_peekHeight="@dimen/player_recommendations_initial_peek_height" app:layout_behavior="@string/bottom_sheet_behavior">
+        <LinearLayout android:orientation="vertical" android:id="@id/related_shows_wrapper" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:layout_gravity="bottom|center" android:id="@id/related_sheet_arrow_background" android:background="@drawable/related_sheet_arrow_background" android:layout_width="@dimen/player_related_sheet_arrow_background_width" android:layout_height="@dimen/player_related_sheet_arrow_background_height" />
+                <ImageView android:layout_gravity="bottom|center" android:id="@id/related_sheet_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:rotation="180.0" app:srcCompat="@drawable/ic_arrow_down" app:tint="@color/white" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/related_shows_title_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/black_transparency_85" />
+                <TextView android:textAppearance="@style/PlayerContentTitle" android:textSize="16.0sp" android:id="@id/related_shows_title" android:paddingTop="@dimen/default_spacing" android:paddingBottom="@dimen/default_spacing" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_spacing_extra_large" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/PlayerContentTitle" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/related_shows_list_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/black_transparency_85" />
+                <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/related_shows_list" android:paddingTop="@dimen/default_spacing" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_spacing_extra_large" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <FrameLayout android:id="@id/adplayer_placeholder" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.viafree.viafreeandroidui.VUILoadingIndicator android:layout_gravity="center" android:id="@id/progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <FrameLayout android:id="@id/livecountdown_placeholder" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/videoplayer_background_image_layout" layout="@layout/videoplayer_background_image" />
+    <FrameLayout android:layout_gravity="end|bottom|center" android:id="@id/next_video_placeholder" android:layout_width="wrap_content" android:layout_height="@dimen/video_player_next_video_height" android:layout_marginTop="48.0dip" android:layout_marginBottom="@dimen/video_player_next_video_margin_bottom" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/video_player_next_video_margin_right" android:layout_alignParentEnd="true" />
+    <FrameLayout android:id="@id/pause_ad_placeholder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true" />
+    <TextView android:textColor="@color/transparent" android:id="@id/player_back_button" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_margin="20.0dip" android:text="@string/back" android:fontFamily="@font/mtg_sans_regular" style="@style/vui_player_button" />
+    <ImageView android:id="@id/pip_img" android:background="@color/transparent" android:padding="8.0dip" android:visibility="gone" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_margin="20.0dip" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:focusable="true" android:clickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="@dimen/tv_video_player_recommendation_item_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/formatpage_related_formats_container" android:layout_width="fill_parent" android:layout_height="@dimen/tv_video_player_recommendation_item_height" android:foreground="@drawable/vui_selectable_thumbnail_bg" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/formatpage_related_formats_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+        <include layout="@layout/channel_logo_layout" />
+        <include layout="@layout/tv_card_non_focus_overlay" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/format_page_related_formats_title_wrapper" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="68.0dip" android:paddingEnd="@dimen/tv_video_card_text_container_padding_focused" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/formatpage_related_formats_container">
+        <TextView android:textAppearance="@style/tv_card_title" android:textColor="@color/tv_unfocused_text_color" android:id="@id/formatpage_related_formats_title" android:layout_width="@dimen/tv_video_player_recommendation_item_width" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/tv_card_title" />
+        <TextView android:textAppearance="@style/textDefault.Small" android:textColor="@color/tv_player_related_series_subtitle_color" android:ellipsize="end" android:id="@id/formatpage_related_format_subtitle" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tv_video_card_text_container_padding_focused" android:lines="2" android:fontFamily="@font/mtg_sans_regular" android:layout_marginStart="@dimen/tv_video_card_text_container_padding_focused" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

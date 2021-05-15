@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rewind_container" android:focusable="false" android:visibility="invisible" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/forward_container" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textAppearance="@style/vui_ffwd_rew_text" android:id="@id/textview_rewind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:scaleX="0.6" android:scaleY="0.6" android:layout_toStartOf="@id/img_rewind" style="@style/vui_ffwd_rew_text" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/img_rewind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/white" android:layout_centerInParent="true" android:scaleX="0.6" android:scaleY="0.6" app:srcCompat="@drawable/ic_rewind" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/forward_container" android:focusable="false" android:visibility="invisible" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/rewind_container" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/img_fastforward" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/white" android:layout_centerInParent="true" android:scaleX="0.6" android:scaleY="0.6" app:srcCompat="@drawable/ic_fast_forward" />
+        <TextView android:textAppearance="@style/vui_ffwd_rew_text" android:id="@id/textview_forward" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:scaleX="0.6" android:scaleY="0.6" android:layout_toEndOf="@id/img_fastforward" style="@style/vui_ffwd_rew_text" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

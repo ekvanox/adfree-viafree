@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/offwhite" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" app:theme="@style/ThemeOverlay.AppCompat.Light">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/viafree_logo_horizontal" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout android:paddingTop="?actionBarSize" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/chromecast_progressbar_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.viafree.viafreeandroidui.VUILoadingIndicator android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="@style/textDefault" android:gravity="center" android:padding="@dimen/default_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cast_expanded_controller_loading" android:fontFamily="@font/mtg_sans_regular" />
+        </LinearLayout>
+        <TextView android:textAppearance="@style/textDefault.Large.Dark1" android:gravity="center" android:id="@id/chromecast_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:fontFamily="@font/mtg_sans_regular" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

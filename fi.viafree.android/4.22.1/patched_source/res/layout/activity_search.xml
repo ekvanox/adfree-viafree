@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <androidx.appcompat.widget.Toolbar android:gravity="start" android:id="@id/toolbar" android:background="@color/app_background_color" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" app:theme="@style/AppTheme.ThemeOverlay.AppCompat.Light">
+            <androidx.appcompat.widget.SearchView android:id="@id/search_view" android:background="@drawable/rounded_light_widget_bg" android:paddingLeft="0.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="9.0dip" android:layout_marginBottom="10.0dip" app:closeIcon="@drawable/cross_circle_icon" app:iconifiedByDefault="false" app:searchIcon="@drawable/subtle_search_icon" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout android:orientation="vertical" android:background="@color/app_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/discover_recyclerview" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/general_text_color" android:gravity="center" android:id="@id/search_empty_text" android:paddingLeft="@dimen/default_spacing_large" android:paddingRight="@dimen/default_spacing_large" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/search_item_image_height" android:fontFamily="@font/oduda_semi_bold" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

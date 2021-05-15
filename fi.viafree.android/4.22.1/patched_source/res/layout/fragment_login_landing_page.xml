@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" app:srcCompat="@mipmap/ic_splash" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/user_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_horizontal_spacing_extra_extra_large" android:fontFamily="@font/mtg_sans_bold" style="@style/textDefault.Large.Dark1" />
+</LinearLayout>

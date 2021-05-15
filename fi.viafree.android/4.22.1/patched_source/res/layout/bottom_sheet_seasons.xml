@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bottomSheet" android:background="@color/black_transparency_90" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end" android:id="@id/season_select_close_button" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="16.0dip" app:srcCompat="@drawable/ic_close" />
+        <TextView android:textAppearance="@style/SeasonSelect.SeasonSelectTitle" android:layout_gravity="center_vertical" android:id="@id/series_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/format_season_title" android:maxLines="2" android:layout_marginStart="32.0dip" />
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/recycler_view_seasons" android:paddingBottom="@dimen/default_spacing_extra_large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing_large" android:layout_marginBottom="@dimen/default_spacing_extra_large" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintTop_toBottomOf="@id/series_title" app:reverseLayout="false" />
+    </LinearLayout>
+</LinearLayout>

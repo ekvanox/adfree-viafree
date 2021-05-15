@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/pause_ad_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textAppearance="@style/vui_player_button" android:id="@id/player_back_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_margin="20.0dip" android:text="@string/back" android:fontFamily="@font/mtg_sans_regular" style="@style/vui_player_button" />
+    <ImageView android:id="@id/pip_img" android:background="@drawable/vui_player_pip_bg" android:padding="8.0dip" android:visibility="gone" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_margin="20.0dip" app:srcCompat="@drawable/ic_pip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/controller_container" android:background="@drawable/player_control_gradient_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/info_scroll_view_content" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:paddingStart="@dimen/player_scroll_overlay_padding">
+            <TextView android:textAppearance="@style/player_title" android:id="@id/video_title" android:layout_width="@dimen/video_player_content_width" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/video_player_title_bottom_margin" android:contentDescription="videocontroller_video_title" style="@style/player_title" />
+            <TextView android:id="@id/season_episode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/video_player_title_bottom_margin" style="@style/videocontroller_season_episode" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:layout_width="@dimen/player_play_pause_btn_container_size" android:layout_height="@dimen/player_play_pause_btn_container_size" android:layout_marginTop="@dimen/default_spacing_large" android:layout_marginBottom="@dimen/default_spacing_large" android:layout_marginStart="@dimen/player_scroll_overlay_padding">
+            <ImageView android:layout_gravity="bottom" android:id="@id/pause_ad_button_play_pause" android:layout_width="@dimen/player_play_pause_btn_size" android:layout_height="@dimen/player_play_pause_btn_size" app:srcCompat="@drawable/ic_play" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/textDefault.Large.White" android:id="@id/pause_ad_close" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="@string/videoplayer_close_ad" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="3.0" android:fontFamily="@font/mtg_sans_regular" />
+        <TextView android:textAppearance="@style/vui_player_button" android:layout_gravity="end|center|top" android:id="@id/pause_ad_link_text" android:layout_width="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/adplayer_visit_advertiser" android:layout_marginEnd="20.0dip" style="@style/vui_player_button" />
+    </LinearLayout>
+</FrameLayout>

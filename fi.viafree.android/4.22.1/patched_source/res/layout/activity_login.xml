@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="3.0dip">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/jumbo" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@id/login_page_content" android:background="@color/offwhite" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

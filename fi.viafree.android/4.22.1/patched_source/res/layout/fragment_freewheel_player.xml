@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/adplayer_view" layout="@layout/videoplayer_ad" />
+    <TextView android:textAppearance="@style/vui_player_button" android:id="@id/player_back_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_margin="20.0dip" android:text="@string/back" android:fontFamily="@font/mtg_sans_regular" style="@style/vui_player_button" />
+    <ImageView android:id="@id/pip_img" android:background="@drawable/vui_player_pip_bg" android:padding="8.0dip" android:visibility="gone" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_margin="20.0dip" app:srcCompat="@drawable/ic_pip" />
+    <com.viafree.viafreeandroidui.VUILoadingIndicator android:layout_gravity="center" android:id="@id/adplayer_progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.AppCompat.ProgressBar" />
+    <View android:orientation="vertical" android:id="@id/clickable_overlay" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

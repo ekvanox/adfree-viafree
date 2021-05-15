@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/feature_box_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/vui_selectable_thumbnail_bg"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_spacing_large">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/feature_box_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+            <com.viafree.android.common.custom_views.Swoosh android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include layout="@layout/channel_logo_big_layout" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/feature_box_title_container" android:background="@color/white" android:paddingLeft="@dimen/default_horizontal_spacing" android:paddingTop="6.0dip" android:paddingRight="@dimen/default_horizontal_spacing" android:paddingBottom="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_horizontal_spacing" android:paddingEnd="@dimen/default_horizontal_spacing">
+            <TextView android:textAppearance="@style/textDefault.ExtraExtraLarge.Jumbo" android:ellipsize="end" android:id="@id/feature_box_title" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:fontFamily="@font/oduda_semi_bold" />
+            <include android:id="@id/feature_box_live" layout="@layout/live_blob" />
+            <TextView android:textAppearance="@style/textDefault.Small.ViaFreeOrange" android:gravity="left" android:id="@id/feature_box_blob" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing_small" android:layout_marginBottom="@dimen/default_spacing_small" android:fontFamily="@font/mtg_sans_black" />
+            <TextView android:textAppearance="@style/textDefault.Small.Jumbo" android:ellipsize="end" android:id="@id/feature_box_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/mtg_sans_regular" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/channel_logo_layout" />
+</FrameLayout>

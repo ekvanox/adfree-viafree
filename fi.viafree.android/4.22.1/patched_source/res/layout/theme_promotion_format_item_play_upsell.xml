@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:maxWidth="@dimen/default_item_format_width" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/format_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@color/placeholder" android:scaleType="centerCrop" android:maxWidth="@dimen/default_item_format_width" android:maxHeight="@dimen/default_item_format_height" />
+    <TextView android:textAppearance="@style/themePromotionTextStyle" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/format_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing" android:maxLines="1" android:layout_below="@id/format_image" android:fontFamily="@font/mtg_sans_black" />
+    <include layout="@layout/channel_logo_layout" />
+</RelativeLayout>

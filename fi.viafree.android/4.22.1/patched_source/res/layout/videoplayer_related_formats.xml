@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:orientation="horizontal" android:background="@color/fading_edge" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/related_show_background_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:background="@drawable/player_related_shows_gradient_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/related_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="parent" app:layout_constraintStart_toEndOf="parent">
+        <TextView android:textAppearance="@style/textDefault.Large.White" android:id="@id/videoplayer_related_formats_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_spacing_large" android:text="@string/videoplayer_related_programs" android:fontFamily="@font/oduda_semi_bold" />
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:orientation="horizontal" android:id="@id/videoplayer_related_formats_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/videoplayer_minimized_player_related_themes_padding" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+            <requestFocus />
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/live_label_rounded_bg" android:paddingTop="@dimen/default_spacing_extra_small" android:paddingBottom="@dimen/default_spacing_extra_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/default_spacing_small" android:paddingEnd="@dimen/default_spacing_small"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/live_circle" android:layout_width="@dimen/default_spacing_medium" android:layout_height="@dimen/default_spacing_medium" android:contentDescription="@string/app_name" android:layout_marginEnd="@dimen/default_spacing_small" app:srcCompat="@drawable/vui_live_white_circle" />
+    <TextView android:textAppearance="@style/textDefault.Small.White" android:ellipsize="end" android:layout_gravity="center" android:id="@id/live_textView" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/videoplayer_live" android:maxLines="1" android:textAllCaps="true" android:fontFamily="@font/mtg_sans_bold" />
+</LinearLayout>

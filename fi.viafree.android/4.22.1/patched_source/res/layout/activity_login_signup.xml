@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/login_dialog_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ToolbarTheme" android:id="@id/app_bar" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/ToolbarTheme" android:id="@id/toolbar" android:background="@color/app_background_color" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_scrollFlags="enterAlways|enterAlwaysCollapsed|scroll" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@id/login_page_content" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/dialog_content_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="24.0dip" android:paddingEnd="24.0dip">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/account_created_viafree_logo" android:layout_width="wrap_content" android:layout_height="72.0dip" android:layout_marginTop="46.0dip" android:src="@mipmap/ic_splash" app:layout_constraintEnd_toStartOf="parent" app:layout_constraintStart_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textAppearance="@style/vui_card_title" android:id="@id/account_created_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/login_message_accountcreated" app:layout_constraintEnd_toStartOf="parent" app:layout_constraintStart_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/account_created_viafree_logo" style="@style/vui_card_title" />
+            <TextView android:textAppearance="@style/vui_create_account_description" android:id="@id/account_created_features" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/account_created_header" style="@style/vui_create_account_description" />
+            <com.viafree.viafreeandroidui.VUIButton android:id="@id/account_created_ready_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="@string/login_info_startwatching" app:layout_constraintEnd_toStartOf="parent" app:layout_constraintStart_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/account_created_features" app:vuiButtonBackgroundType="filled" />
+            <TextView android:textAppearance="@style/vui_create_account_description" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/login_info_watchonotherdevices" app:layout_constraintEnd_toStartOf="parent" app:layout_constraintStart_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/account_created_ready_button" style="@style/vui_create_account_description" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout android:id="@id/account_created_loading_indicator" android:background="@color/app_background_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.viafree.viafreeandroidui.VUILoadingIndicator android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </FrameLayout>
+</ScrollView>

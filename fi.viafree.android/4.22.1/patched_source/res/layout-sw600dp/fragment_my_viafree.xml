@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/default_spacing" android:layout_marginRight="@dimen/default_spacing" android:baselineAligned="false" android:divider="?android:dividerHorizontal" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/myviafree_recyclerview" android:paddingBottom="@dimen/bottom_bar_height" android:clipToPadding="false" android:layout_width="270.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/default_spacing" android:layout_marginRight="@dimen/default_spacing" app:layoutManager="LinearLayoutManager" />
+    <FrameLayout android:id="@id/item_detail_container" android:background="@color/app_background_color" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+</LinearLayout>

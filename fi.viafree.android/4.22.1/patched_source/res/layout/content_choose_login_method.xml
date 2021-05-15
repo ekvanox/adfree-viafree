@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_spacing_extra_large" layout="@layout/same_login_service" />
+    <LinearLayout android:orientation="vertical" android:id="@id/login_page_user_already_exists_desc_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_spacing_extra_large">
+        <TextView android:textColor="@color/tuna" android:id="@id/login_page_user_already_exists" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_spacing_large" android:fontFamily="@font/mtg_sans_regular" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/login_page_facebook_login_btn" android:background="@drawable/rounded_fb_blue_widget_bg" android:layout_width="fill_parent" style="@style/roundButtonStyleDark">
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/login_page_facebook_login_btn_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/login_login_with_facebook" android:fontFamily="@font/mtg_sans_bold" />
+        <com.viafree.viafreeandroidui.VUILoadingIndicator android:layout_gravity="center" android:id="@id/loading_fb_login" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/login_options_divider_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_page_top_padding" android:layout_marginBottom="@dimen/login_page_top_padding">
+        <View android:background="@color/silver" android:layout_width="0.0dip" android:layout_height="0.5dip" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/silver" android:id="@id/login_options_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_spacing" android:text="@string/login_options_divider_or" android:fontFamily="@font/mtg_sans_regular" />
+        <View android:background="@color/silver" android:layout_width="0.0dip" android:layout_height="0.5dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.viafree.android.common.custom_views.CustomFontEditText android:textColor="@color/manatee" android:id="@id/login_page_email_input" android:layout_width="fill_parent" android:maxWidth="30.0dip" android:minWidth="30.0dip" android:hint="@string/login_email_hint" android:drawableRight="@drawable/ic_account" android:inputType="textEmailAddress" android:drawableEnd="@drawable/ic_account" android:fontFamily="@font/mtg_sans_bold" app:hintFontStyle="mtgSans" style="@style/defaultEditTextStyle" />
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/login_page_password_input_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing" app:hintEnabled="false" app:passwordToggleEnabled="true">
+        <com.viafree.android.common.custom_views.CustomFontEditText android:textColor="@color/manatee" android:id="@id/login_page_password_input" android:layout_width="fill_parent" android:hint="@string/login_password_hint" android:inputType="textPassword" android:fontFamily="@font/mtg_sans_bold" app:hintFontStyle="mtgSans" style="@style/defaultEditTextStyle" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/error_orange" android:id="@id/login_page_login_failed_message" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_spacing" android:text="@string/login_wrong_credentials" android:fontFamily="@font/mtg_sans_regular" />
+    <FrameLayout android:id="@id/login_page_login_btn" android:layout_width="fill_parent" style="@style/roundButtonStyleDark">
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/login_page_login_btn_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/navigation_login" android:fontFamily="@font/mtg_sans_bold" />
+        <com.viafree.viafreeandroidui.VUILoadingIndicator android:layout_gravity="center" android:id="@id/loading_pwd_login" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/login_page_check_user_existing_btn" android:visibility="gone" android:layout_width="fill_parent" style="@style/roundButtonStyleDark">
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/login_page_check_user_existing_btn_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/login_signup_with_email" android:fontFamily="@font/mtg_sans_bold" />
+        <com.viafree.viafreeandroidui.VUILoadingIndicator android:layout_gravity="center" android:id="@id/loading_check_user_existing_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <TextView android:id="@id/login_page_forgot_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing_large" android:layout_marginBottom="@dimen/default_spacing_large" android:text="@string/login_forgot_password" style="@style/clickableTextStyle" />
+    <TextView android:id="@id/login_page_create_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_create_account" style="@style/clickableTextStyle" />
+    <TextView android:id="@id/login_page_existing_account" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing_large" android:text="@string/login_existing_account" style="@style/clickableTextStyle" />
+</LinearLayout>

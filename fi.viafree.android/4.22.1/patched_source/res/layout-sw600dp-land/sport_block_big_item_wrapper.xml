@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/big_items_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/block_title_margin" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:layout_weight="1.0" android:layout_marginEnd="1.0dip" layout="@layout/video_content_item_large" />
+    <include android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_weight="1.0" android:layout_marginStart="1.0dip" android:layout_marginEnd="1.0dip" layout="@layout/video_content_item_large" />
+    <include android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_weight="1.0" android:layout_marginStart="1.0dip" layout="@layout/video_content_item_large" />
+</LinearLayout>

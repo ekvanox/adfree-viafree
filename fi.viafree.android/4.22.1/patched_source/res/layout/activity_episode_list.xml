@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ToolbarTheme" android:id="@id/app_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="@animator/appbar_always_elevated">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/ToolbarTheme" android:id="@id/toolbar" android:background="@color/app_background_color" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="enterAlways|enterAlwaysCollapsed|scroll" app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@id/episode_list_container" android:background="@color/app_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

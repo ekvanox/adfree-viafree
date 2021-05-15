@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:paddingTop="@dimen/block_row_margin" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/vui_block_title" android:id="@id/block_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/content_page_padding" style="@style/vui_block_title" />
+    <TextView android:textAppearance="@style/clickableTextStyle" android:textColor="@color/jumbo" android:id="@id/block_see_all" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/format_show_all" android:paddingEnd="@dimen/content_page_padding" app:layout_constraintBottom_toBottomOf="@id/block_title" app:layout_constraintEnd_toEndOf="parent" style="@style/clickableTextStyle" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/block_title_margin" app:layout_constraintTop_toBottomOf="@id/block_title">
+        <View android:id="@id/block_background" android:layout_width="fill_parent" android:layout_height="88.0dip" android:layout_marginTop="12.0dip" />
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/block_list" android:paddingLeft="@dimen/content_page_padding" android:paddingRight="@dimen/content_page_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/content_page_padding" android:paddingEnd="@dimen/content_page_padding" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

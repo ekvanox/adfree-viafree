@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.viafree.android.startpage.StartPageBlob android:paddingTop="3.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingEnd="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="bottom" android:layout_width="58.0dip" android:layout_height="58.0dip" app:srcCompat="@drawable/startpage_blob_bg" />
+    <TextView android:textAppearance="@style/textDefault.White" android:gravity="center" android:id="@id/startpage_blob_text" android:padding="@dimen/default_spacing_extra_small" android:layout_width="58.0dip" android:layout_height="58.0dip" android:fontFamily="@font/oduda_bold" />
+</com.viafree.android.startpage.StartPageBlob>

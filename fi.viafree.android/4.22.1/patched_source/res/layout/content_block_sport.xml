@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/content_page_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/block_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/block_title_margin" android:paddingStart="@dimen/content_page_padding" style="@style/SectionHeader2" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/block_small_item_margin" android:layout_marginStart="@dimen/content_page_padding" android:layout_marginEnd="@dimen/block_with_shadow_padding" layout="@layout/sport_block_big_item_wrapper" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/block_list" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/block_row_margin" android:paddingStart="@dimen/content_page_padding" android:paddingEnd="@dimen/block_with_shadow_padding" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatButton android:ellipsize="marquee" android:id="@id/lb_action_button" android:background="@drawable/tv_action_button" android:layout_width="wrap_content" android:layout_height="@dimen/lb_action_1_line_height" android:maxWidth="@dimen/tv_series_page_action_button_max_width" android:singleLine="true" android:drawablePadding="@dimen/default_spacing" android:marqueeRepeatLimit="marquee_forever" android:fontFamily="@font/mtg_sans_bold" style="?detailsActionButtonStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

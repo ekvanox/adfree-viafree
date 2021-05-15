@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FeatureSeriesSubTitle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/white_alpha_75</item>
+        <item name="fontFamily">@font/mtg_sans_regular</item>
+    </style>
+    <style name="FeatureSeriesTitle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/white_grey</item>
+        <item name="fontFamily">@font/mtg_sans_bold</item>
+    </style>
+    <style name="NewSeasonChannelFeaturedText">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/mtg_sans_bold</item>
+    </style>
+    <style name="TextStyle">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/slate_grey</item>
+        <item name="android:lineSpacingExtra">4.0sp</item>
+        <item name="fontFamily">@font/mtg_sans_regular</item>
+    </style>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+    <style name="player_description" parent="@style/DescriptionText6" />
+    <style name="player_tag" parent="@style/SportTag2" />
+    <style name="player_title" parent="@style/ContentTitle2">
+        <item name="android:textSize">36.0sp</item>
+    </style>
+    <style name="themePromotionTextStyle" parent="@style/textDefault.Large.White" />
+    <style name="videocontroller_season_episode">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">#b0ffffff</item>
+        <item name="fontFamily">@font/mtg_sans_regular</item>
+    </style>
+</resources>

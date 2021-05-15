@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing_medium" android:layout_marginBottom="@dimen/default_spacing" layout="@layout/same_login_service" />
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/change_password_first_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_spacing_medium" app:hintEnabled="false" app:passwordToggleEnabled="true">
+        <com.viafree.android.common.custom_views.CustomFontEditText android:layout_width="fill_parent" android:inputType="textPassword" android:fontFamily="@font/mtg_sans_bold" app:hintFontStyle="mtgSans" style="@style/defaultEditTextStyle" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/change_password_second_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing_medium" android:layout_marginBottom="32.0dip" app:hintEnabled="false" app:passwordToggleEnabled="true">
+        <com.viafree.android.common.custom_views.CustomFontEditText android:layout_width="fill_parent" android:inputType="textPassword" android:fontFamily="@font/mtg_sans_bold" app:hintFontStyle="mtgSans" style="@style/defaultEditTextStyle" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView android:textAppearance="@style/textDefault" android:gravity="left" android:id="@id/change_password_clarification_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/change_password_we_use_same_login_explanation" android:fontFamily="@font/mtg_sans_bold" />
+    <TextView android:textAppearance="@style/textDefault.ViaFreeOrange" android:textColor="@color/error_orange" android:gravity="center" android:id="@id/change_password_error_message" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing" android:layout_marginBottom="@dimen/default_spacing" android:fontFamily="@font/mtg_sans_regular" />
+    <com.viafree.viafreeandroidui.VUIButton android:textAppearance="@style/textDefault.Large.White" android:gravity="center" android:id="@id/change_password_submit_button_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/change_password_button_title" android:fontFamily="@font/mtg_sans_bold" />
+    <include android:id="@id/progress_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/vui_loading_full_layout" />
+</LinearLayout>

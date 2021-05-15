@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/forced_login_image" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="centerCrop" app:layout_constraintDimensionRatio="16:9" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/default_spacing_extra_large" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/forced_login_image">
+        <TextView android:textSize="22.0sp" android:textColor="@color/login_forced_title" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_page_forced_login_title" app:fontFamily="@font/mtg_sans_regular" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/login_forced_text" android:gravity="center_horizontal" android:id="@id/forced_login_upsell_text" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="@dimen/default_spacing_extra_large" android:text="@string/login_page_forced_login_description" android:layout_weight="1.0" app:fontFamily="@font/mtg_sans_regular" />
+        <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" layout="@layout/same_login_service" />
+        <com.viafree.viafreeandroidui.VUIButton android:id="@id/forced_login_login_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing" android:text="@string/login_page_forced_alreday_have_account" />
+        <com.viafree.viafreeandroidui.VUIButton android:id="@id/forced_login_create_account_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing" android:text="@string/login_page_forced_create_account" app:vuiButtonBackgroundType="outlined" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
