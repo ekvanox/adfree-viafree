@@ -2,6 +2,7 @@
 
 [![Version](https://img.shields.io/github/v/release/ekvanox/viafree-android-no-ads)](https://img.shields.io/github/v/release/ekvanox/viafree-android-no-ads)
 ![GitHub repo size](https://img.shields.io/github/repo-size/ekvanox/viafree-android-no-ads)
+[![Downloads](https://img.shields.io/github/downloads/ekvanox/adfree-viafree/total)](https://img.shields.io/github/downloads/ekvanox/adfree-viafree/total)
 ![License](https://img.shields.io/github/license/ekvanox/wordfeud-bot)
 
 Compiled binaries and source code for an adfree version of the video streaming application [Viafree](https://play.google.com/store/apps/details?id=se.viafree.android&hl=en_US&gl=US)
