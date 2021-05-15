@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/tuna" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/my_viafree_name_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTint="@color/white" app:srcCompat="@drawable/ic_my_viafree_white" />
+    <com.viafree.android.common.custom_views.CustomFontTextView android:textAppearance="@style/textDefault.Large.White" android:gravity="center" android:id="@id/my_viafree_name_text" android:padding="@dimen/default_spacing_large" android:layout_width="wrap_content" android:layout_height="wrap_content" app:customFontStyle="mtgSans" />
+</LinearLayout>

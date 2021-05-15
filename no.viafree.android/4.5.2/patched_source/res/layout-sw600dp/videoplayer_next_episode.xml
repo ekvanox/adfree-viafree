@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="bottom|center|right" android:orientation="horizontal" android:background="@color/transparent" android:focusable="true" android:layout_width="wrap_content" android:layout_height="@dimen/video_player_next_video_height" android:baselineAligned="false">
+        <android.support.design.button.MaterialButton android:textSize="24.0sp" android:id="@id/next_video_close" android:nextFocusRight="@id/next_video_play_button" android:nextFocusUp="@id/next_video_play_button" android:layout_width="wrap_content" android:layout_height="72.0dip" android:layout_marginRight="8.0dip" android:text="@string/tv_videoplayer_next_episode_close" style="@style/PushNextCloseButton" />
+        <android.support.design.button.MaterialButton android:textSize="24.0sp" android:id="@id/next_video_play_button" android:nextFocusLeft="@id/next_video_close" android:nextFocusUp="@id/next_video_close" android:layout_width="wrap_content" android:layout_height="72.0dip" android:maxLines="1" android:paddingStart="16.0dip" android:paddingEnd="32.0dip" app:icon="@drawable/lb_ic_play" app:strokeColor="@color/mtl_btn_stroke_selector" style="@style/PushNextButton">
+            <requestFocus />
+        </android.support.design.button.MaterialButton>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/format_description_upper_container" android:paddingTop="0.0dip" android:paddingBottom="@dimen/default_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.viafree.android.common.custom_views.CustomFontTextView android:textAppearance="@style/textDefault.Jumbo" android:ellipsize="end" android:id="@id/format_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing_small" android:layout_marginBottom="@dimen/default_spacing_small" app:customFontStyle="mtgSans" />
+    <android.support.percent.PercentRelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/format_theme_logo" android:padding="@dimen/default_spacing" android:visibility="gone" android:foreground="@drawable/selectable_thumbnail_bg" app:layout_aspectRatio="206.99768%" app:layout_widthPercent="50.0%" />
+        <FrameLayout android:id="@id/format_sponsorlogo_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_spacing" android:layout_toRightOf="@id/format_theme_logo" android:layout_centerVertical="true" android:layout_toEndOf="@id/format_theme_logo" />
+    </android.support.percent.PercentRelativeLayout>
+</LinearLayout>

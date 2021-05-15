@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/same_login_service_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.viafree.android.common.custom_views.CustomFontTextView android:textSize="12.0sp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_spacing_small" android:text="@string/login_we_use_same_loginservice" app:customFontStyle="mtgSans" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="180.0dip" android:layout_height="wrap_content">
+        <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/viafree_logo_horizontal" android:layout_weight="1.0" />
+        <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/viaplay_logo_horizontal" android:layout_weight="1.0" android:layout_marginStart="@dimen/default_horizontal_spacing" android:layout_marginEnd="@dimen/default_horizontal_spacing" />
+    </LinearLayout>
+</LinearLayout>

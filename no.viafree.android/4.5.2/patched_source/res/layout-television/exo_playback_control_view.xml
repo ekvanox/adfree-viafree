@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/player_control_gradient_background" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/tv_layout_accessible" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tv_video_player_control_row_margin" android:layout_marginRight="@dimen/tv_video_player_control_row_margin" android:layout_marginBottom="@dimen/tv_video_player_control_row_margin_bottom" android:layoutDirection="ltr">
+        <LinearLayout android:orientation="vertical" android:id="@id/info_scroll_view_content" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tv_video_player_title_margin_bottom" android:layout_marginStart="@dimen/tv_video_player_title_margin_start">
+            <android.support.v7.widget.AppCompatTextView android:textAppearance="@style/player_tag" android:id="@id/exo_videocontroller_video_tag" android:layout_width="@dimen/video_player_content_width" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/video_player_tag_bottom_margin" android:textAllCaps="true" style="@style/player_tag" />
+            <android.support.v7.widget.AppCompatTextView android:textAppearance="@style/tv_player_title_first" android:id="@id/exo_videocontroller_video_title" android:layout_width="@dimen/video_player_content_width" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/video_player_title_bottom_margin" style="@style/tv_player_title_first" />
+            <android.support.v7.widget.AppCompatTextView android:id="@id/exo_videocontroller_season_episode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/video_player_title_bottom_margin" style="@style/tv_player_title_second" />
+            <include android:id="@id/exo_videocontroller_video_live" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/video_player_title_bottom_margin" layout="@layout/live_blob" />
+            <android.support.v7.widget.AppCompatTextView android:textAppearance="@style/player_description" android:id="@id/exo_text" android:layout_width="@dimen/video_player_content_width" android:layout_height="wrap_content" style="@style/player_description" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/exo_videocontroller" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="start" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/exo_play" android:nextFocusRight="@id/exo_pause" android:nextFocusDown="@id/exo_progress" style="@style/Leanback.Viafree.ExoMediaButton.Play" />
+                <ImageButton android:id="@id/exo_pause" android:nextFocusRight="@id/exo_rew" style="@style/Leanback.Viafree.ExoMediaButton.Pause" />
+                <ImageButton android:id="@id/exo_rew" android:nextFocusRight="@id/exo_ffwd" style="@style/Leanback.Viafree.ExoMediaButton.Rewind" />
+                <ImageButton android:id="@id/exo_ffwd" android:nextFocusRight="@id/exo_videocontroller_toggle_subtitle" style="@style/Leanback.Viafree.ExoMediaButton.FastForward" />
+                <android.support.v7.widget.AppCompatImageButton android:id="@id/exo_videocontroller_toggle_subtitle" android:visibility="gone" style="@style/Caption" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.exoplayer2.ui.DefaultTimeBar android:id="@id/exo_progress" app:ad_marker_color="@color/white" app:bar_height="@dimen/tv_video_player_control_row_scrubber_bar_height" app:buffered_color="@color/silver" app:played_color="@color/neworange" app:scrubber_color="@color/light_grey" app:scrubber_disabled_size="@dimen/tv_video_player_control_row_scrubber_disabled_size" app:scrubber_enabled_size="@dimen/tv_video_player_control_row_scrubber_enabled_size" app:unplayed_color="@color/jumbo" style="@style/tv_player_scrubber" />
+            </LinearLayout>
+            <RelativeLayout android:layout_gravity="end" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/tv_video_player_duration_margin_end">
+                <TextView android:layout_gravity="end" android:id="@id/exo_duration" android:layout_alignParentEnd="true" style="@style/tv_player_duration" />
+                <android.support.v7.widget.AppCompatTextView android:id="@id/exo_duration_divider" android:text="/" android:layout_toStartOf="@id/exo_duration" style="@style/tv_player_duration" />
+                <android.support.v7.widget.AppCompatTextView android:id="@id/exo_position" android:layout_toStartOf="@id/exo_duration_divider" style="@style/tv_player_duration" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v7.widget.AppCompatImageView android:id="@id/exo_videocontroller_toggle_aspect_ratio" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <android.support.v7.app.MediaRouteButton android:id="@id/exo_videocontroller_media_route_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

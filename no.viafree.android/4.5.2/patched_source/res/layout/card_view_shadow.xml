@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="end|bottom|center" android:background="@drawable/card_view_corner_shadow" android:layout_width="@dimen/card_shadow_thickness" android:layout_height="@dimen/card_shadow_thickness" />
+    <View android:layout_gravity="bottom" android:background="@drawable/card_view_bottom_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/card_shadow_thickness" android:layout_marginLeft="4.0dip" android:layout_marginRight="@dimen/shadow_corner_margin" android:layout_marginStart="4.0dip" android:layout_marginEnd="@dimen/shadow_corner_margin" />
+    <View android:layout_gravity="end" android:background="@drawable/card_view_side_shadow" android:layout_width="@dimen/card_shadow_thickness" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginBottom="@dimen/shadow_corner_margin" />
+</merge>

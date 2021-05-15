@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.percent.PercentFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing_extra_large">
+        <com.viafree.android.common.custom_views.CustomFontTextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/theme_upsell_category_name" android:visibility="gone" android:layout_width="@dimen/video_player_theme_see_all_btn_width" app:autoSizeMaxTextSize="120.0sp" app:autoSizeMinTextSize="2.0sp" app:autoSizeStepGranularity="2.0sp" app:autoSizeTextType="uniform" app:customFontStyle="mtgSansBlack" app:layout_aspectRatio="400.0%" />
+        <ImageView android:layout_gravity="center" android:id="@id/theme_upsell_image" android:foreground="?android:selectableItemBackground" android:tint="@color/white" app:layout_aspectRatio="400.0%" app:layout_widthPercent="50.0%" />
+    </android.support.percent.PercentFrameLayout>
+    <FrameLayout android:layout_gravity="bottom|center" android:id="@id/theme_upsell_see_all_btn" android:layout_width="@dimen/video_player_theme_see_all_btn_width" android:layout_marginTop="@dimen/videoplayer_minimized_item_margin" style="@style/roundButtonStyleLight">
+        <com.viafree.android.common.custom_views.CustomFontTextView android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/format_show_all" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/theme_upsell_related_container" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/videoplayer_minimized_player_related_themes_padding" android:layout_marginTop="@dimen/videoplayer_minimized_item_margin" android:layout_marginRight="@dimen/videoplayer_minimized_player_related_themes_padding" android:layout_marginBottom="@dimen/default_spacing" />
+</LinearLayout>

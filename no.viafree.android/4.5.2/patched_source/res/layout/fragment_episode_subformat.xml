@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/silver" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:id="@id/episode_subformat_show_all" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.viafree.android.common.custom_views.CustomFontTextView android:textSize="16.0sp" android:textColor="@color/jumbo" android:gravity="center" android:id="@id/episode_subformat_show_all_text" android:paddingLeft="@dimen/default_spacing" android:paddingRight="@dimen/default_spacing" android:layout_width="wrap_content" android:layout_height="@dimen/footer_height" android:text="@string/format_subformat_show_all" android:layout_centerInParent="true" app:customFontStyle="mtgSansBold" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/episode_subformat_show_all_text" android:layout_centerVertical="true" android:layout_toEndOf="@id/episode_subformat_show_all_text" app:srcCompat="@drawable/ic_arrow_right_jumbo" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@id/app_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="@animator/appbar_always_elevated">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@color/offwhite" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="enterAlways|enterAlwaysCollapsed|scroll" app:popupTheme="@style/AppTheme.PopupOverlay" app:theme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+    <FrameLayout android:id="@id/main_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <LinearLayout android:layout_gravity="end|bottom|center" android:orientation="vertical" android:id="@id/main_bottom_bars_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <fragment android:id="@id/cast_mini_controller" android:layout_width="fill_parent" android:layout_height="wrap_content" app:castControlButtons="@array/cast_mini_controller_control_buttons" class="com.google.android.gms.cast.framework.media.widget.MiniControllerFragment" />
+        <android.support.design.widget.BottomNavigationView android:id="@id/bottom_navigation" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_bar_height" app:itemIconTint="@drawable/bottom_nav_selector" app:itemTextColor="@drawable/bottom_nav_selector" app:menu="@menu/bottom_navigation" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

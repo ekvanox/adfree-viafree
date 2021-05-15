@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout android:id="@id/root" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/selectable_thumbnail_bg"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/video_image_low_res" android:scaleType="centerCrop" android:adjustViewBounds="true" app:layout_aspectRatio="176.9989%" app:layout_widthPercent="100.0%" />
+    <ImageView android:id="@id/video_image_high_res" android:background="@color/transparent" android:scaleType="centerCrop" android:adjustViewBounds="true" app:layout_aspectRatio="176.9989%" app:layout_widthPercent="100.0%" />
+    <ImageView android:id="@id/video_image_play_image" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="fitXY" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_play_icon_large" />
+    <View android:id="@id/video_image_toolbar_shadow" android:background="@drawable/top_shadow_bg" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:alpha="0.0" />
+    <ProgressBar android:id="@id/video_progress" android:layout_width="232.0dip" android:layout_marginBottom="32.0dip" android:max="100" android:layout_alignBottom="@id/video_image_high_res" android:layout_centerHorizontal="true" style="@style/continueWatchingProgress" />
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v17.leanback.widget.BaseCardView android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackground="@color/transparent" app:cardType="infoUnder"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/image_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatImageView android:id="@id/series_img" android:layout_width="@dimen/tv_featurebox_width" android:layout_height="@dimen/tv_featurebox_height" />
+        <include android:layout_width="@dimen/tv_featurebox_width" android:layout_height="@dimen/tv_featurebox_height" layout="@layout/tv_card_non_focus_overlay" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/info_field" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/image_wrapper" app:layout_viewType="info">
+        <android.support.v7.widget.AppCompatTextView android:textAppearance="@style/tv_card_title" android:id="@id/series_title" android:layout_width="@dimen/tv_featurebox_width" android:layout_height="26.0dip" style="@style/tv_card_title" />
+    </FrameLayout>
+</android.support.v17.leanback.widget.BaseCardView>

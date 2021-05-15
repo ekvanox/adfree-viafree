@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout android:id="@id/complete_registation_swipe_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@color/offwhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <android.support.percent.PercentRelativeLayout android:gravity="center_horizontal" android:paddingTop="@dimen/login_page_top_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <include android:layout_width="@dimen/tablet_page_max_width" android:layout_height="fill_parent" app:layout_marginLeftPercent="4.999995%" app:layout_marginRightPercent="4.999995%" layout="@layout/content_complete_registration" />
+        </android.support.percent.PercentRelativeLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

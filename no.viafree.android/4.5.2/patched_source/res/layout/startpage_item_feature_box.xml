@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/feature_box_item" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/selectable_thumbnail_bg"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/default_horizontal_spacing" android:paddingRight="@dimen/default_horizontal_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_spacing_large" android:paddingStart="@dimen/default_horizontal_spacing" android:paddingEnd="@dimen/default_horizontal_spacing">
+        <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/feature_box_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+            <include layout="@layout/channel_logo_big_layout" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/feature_box_title_container" android:paddingTop="@dimen/default_spacing_small" android:paddingBottom="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.viafree.android.common.custom_views.CustomFontTextView android:textAppearance="@style/textDefault.Large.Jumbo" android:ellipsize="end" android:id="@id/feature_box_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" app:customFontStyle="mtgSansBlack" />
+            <include android:id="@id/feature_box_live" layout="@layout/live_blob" />
+            <com.viafree.android.common.custom_views.CustomFontTextView android:textAppearance="@style/textDefault.Small.ViaFreeOrange" android:gravity="left" android:id="@id/feature_box_blob" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing_small" android:layout_marginBottom="@dimen/default_spacing_small" app:customFontStyle="mtgSansBlack" />
+            <com.viafree.android.common.custom_views.CustomFontTextView android:textAppearance="@style/textDefault.Small.Jumbo" android:ellipsize="end" android:id="@id/feature_box_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" app:customFontStyle="mtgSans" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

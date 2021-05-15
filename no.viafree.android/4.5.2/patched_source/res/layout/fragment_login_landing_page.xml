@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="94.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@mipmap/ic_splash" />
+    <com.viafree.android.common.custom_views.CustomFontTextView android:layout_gravity="center_horizontal" android:id="@id/user_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_horizontal_spacing_extra_extra_large" app:customFontStyle="mtgSansBold" style="@style/textDefault.Large.Dark1" />
+</LinearLayout>

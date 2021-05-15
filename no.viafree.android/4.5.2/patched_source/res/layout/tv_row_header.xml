@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatTextView android:textAppearance="@style/tv_block_title" android:id="@id/row_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/tv_block_title"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

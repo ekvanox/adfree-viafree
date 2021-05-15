@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:layout_alignTop="@id/format_image" android:layout_alignBottom="@id/format_image" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/format_continue_watching_episode_image" android:visibility="invisible" android:fitsSystemWindows="true" android:scaleType="centerCrop" android:adjustViewBounds="true" app:layout_aspectRatio="176.9989%" app:layout_widthPercent="100.0%" />
+    <View android:id="@id/continue_watching_overlay_phone" android:background="@color/black_transparency_40" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <RelativeLayout android:id="@id/format_image_continue_watching_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+            <com.viafree.android.common.custom_views.CustomFontTextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/format_image_continue_watching_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/format_continue_watching" android:alpha="0.0" app:customFontStyle="mtgSansBold" />
+            <ImageView android:id="@id/format_play_image" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_margin="12.0dip" android:scaleType="fitXY" android:transitionName="@string/transition_play_button" app:srcCompat="@drawable/ic_continue_watching_play" />
+            <com.viafree.android.common.custom_views.CustomFontTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/format_page_next_episode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.0" app:customFontStyle="mtgSansBold" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/format_page_video_progress" android:layout_width="250.0dip" android:layout_marginBottom="14.0dip" android:max="100" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:alpha="0.0" style="@style/continueWatchingProgressVariantB" />
+    </RelativeLayout>
+</android.support.percent.PercentFrameLayout>

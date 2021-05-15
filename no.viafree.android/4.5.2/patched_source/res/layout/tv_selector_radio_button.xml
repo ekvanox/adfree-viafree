@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton android:textAppearance="@style/tv_card_title" android:layout_width="fill_parent" android:layout_height="@dimen/tv_selection_dialog_button_height" style="@style/tv_card_title"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

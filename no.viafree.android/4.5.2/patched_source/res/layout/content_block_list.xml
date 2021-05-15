@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:orientation="vertical" android:paddingTop="@dimen/block_row_margin" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.AppCompatTextView android:id="@id/block_title" android:paddingLeft="@dimen/content_page_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/content_page_padding" style="@style/SectionHeader2" />
+    <android.support.v7.widget.AppCompatTextView android:textAppearance="@style/clickableTextStyle" android:textColor="@color/jumbo" android:id="@id/block_see_all" android:paddingRight="@dimen/content_page_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/format_show_all" android:paddingEnd="@dimen/content_page_padding" app:layout_constraintBottom_toBottomOf="@id/block_title" app:layout_constraintEnd_toEndOf="parent" style="@style/clickableTextStyle" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/block_title_margin" app:layout_constraintTop_toBottomOf="@id/block_title">
+        <View android:id="@id/block_background" android:layout_width="fill_parent" android:layout_height="88.0dip" android:layout_marginTop="12.0dip" />
+        <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@id/block_list" android:paddingLeft="@dimen/content_page_padding" android:paddingRight="@dimen/content_page_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/content_page_padding" android:paddingEnd="@dimen/content_page_padding" app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/default_horizontal_spacing" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.viafree.android.common.custom_views.CustomFontTextView android:textAppearance="@style/textDefault.ExtraExtraExtraLarge.White" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/login_onboarding_news_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?actionBarSize" android:text="@string/login_onboarding_favourites_title" app:customFontStyle="mtgSansBold" />
+    <com.viafree.android.common.custom_views.CustomFontTextView android:textAppearance="@style/textDefault.White" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing_extra_large" android:text="@string/login_onboarding_favourites_text" app:customFontStyle="mtgSans" />
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_horizontal_spacing_extra_extra_large" android:src="@drawable/favourite_upsell" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/offwhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:paddingLeft="@dimen/login_page_side_padding" android:paddingTop="@dimen/login_page_top_padding" android:paddingRight="@dimen/login_page_side_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/content_choose_login_method" />
+    </FrameLayout>
+</ScrollView>

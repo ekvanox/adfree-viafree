@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_horizontal_spacing" android:layout_marginTop="@dimen/default_spacing" android:layout_marginRight="@dimen/default_horizontal_spacing" android:layout_marginBottom="@dimen/default_spacing" android:foreground="@drawable/selectable_thumbnail_bg" android:layout_marginStart="@dimen/default_horizontal_spacing" android:layout_marginEnd="@dimen/default_horizontal_spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.percent.PercentFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/contestant_image" android:scaleType="centerCrop" app:layout_aspectRatio="177.99988%" app:layout_widthPercent="100.0%" />
+        <ImageView android:layout_gravity="center" android:id="@id/contestant_play_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_play_icon_small" />
+        <com.viafree.android.common.custom_views.CustomFontTextView android:layout_gravity="bottom|center|right" android:id="@id/contestant_clip_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_spacing" app:customFontStyle="mtgSansBold" style="@style/extraItemDuration" />
+    </android.support.percent.PercentFrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing" android:layout_marginBottom="@dimen/default_spacing">
+        <com.viafree.android.common.custom_views.CustomFontTextView android:textAppearance="@style/textDefault.Large.Jumbo" android:ellipsize="end" android:id="@id/contestant_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:customFontStyle="mtgSansBlack" />
+    </LinearLayout>
+    <com.viafree.android.common.custom_views.CustomFontTextView android:ellipsize="end" android:id="@id/contestant_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="400" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="format_continue_watching_tablet_img_height">208.0dip</dimen>
+    <dimen name="format_continue_watching_tablet_img_width">372.0dip</dimen>
+    <dimen name="sport_feature_item_left_padding">62.0dip</dimen>
+    <dimen name="sport_feature_item_right_padding">62.0dip</dimen>
+    <dimen name="sport_feature_item_top_padding">72.0dip</dimen>
+</resources>

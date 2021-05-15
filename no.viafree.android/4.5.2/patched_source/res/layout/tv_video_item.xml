@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v17.leanback.widget.BaseCardView android:orientation="vertical" android:layout_width="@dimen/tv_card_width" android:layout_height="wrap_content" app:cardBackground="@color/transparent" app:cardType="infoUnder"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/tv_video_item_image_wrapper" android:background="@color/white" android:layout_width="@dimen/tv_card_width" android:layout_height="@dimen/tv_card_height" android:animateLayoutChanges="true">
+        <ImageView android:layout_gravity="center" android:layout_width="@dimen/tv_video_card_play_button_size" android:layout_height="@dimen/tv_video_card_play_button_size" android:src="@mipmap/ic_launcher" />
+        <android.support.v7.widget.AppCompatImageView android:id="@id/tv_video_item_image" android:layout_width="@dimen/tv_card_width" android:layout_height="@dimen/tv_card_height" />
+        <ImageView android:id="@id/logo_imageView" android:layout_width="wrap_content" android:layout_height="@dimen/tv_logo_height" android:layout_margin="@dimen/default_spacing_small" android:scaleType="fitStart" />
+        <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/tv_video_item_play_button" android:visibility="invisible" android:layout_width="@dimen/tv_video_card_play_button_size" android:layout_height="@dimen/tv_video_card_play_button_size" app:srcCompat="@drawable/ic_play" />
+        <ProgressBar android:layout_gravity="bottom" android:id="@id/tv_video_item_progress" android:padding="0.0dip" android:visibility="gone" android:layout_width="fill_parent" style="@style/continueWatchingProgress" />
+        <android.support.v7.widget.AppCompatTextView android:textAppearance="@style/tv_video_time_label" android:layout_gravity="bottom" android:id="@id/tv_video_broadcast_days_left_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/tv_video_time_label" />
+        <include layout="@layout/tv_card_non_focus_overlay" />
+    </FrameLayout>
+    <android.support.v17.leanback.widget.NonOverlappingRelativeLayout android:orientation="vertical" android:id="@id/info_field" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/tv_video_card_text_container_height" app:layout_constraintTop_toBottomOf="@id/tv_video_item_image_wrapper" app:layout_viewType="info">
+        <android.support.v7.widget.AppCompatTextView android:textAppearance="@style/tv_card_title" android:id="@id/tv_video_item_title" android:layout_width="@dimen/tv_card_width" android:layout_height="wrap_content" style="@style/tv_card_title" />
+        <android.support.v7.widget.AppCompatTextView android:textAppearance="@style/tv_bread_text" android:ellipsize="end" android:id="@id/tv_video_item_episode_name" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing_extra_small" android:lines="1" android:layout_below="@id/tv_video_item_title" android:layout_marginStart="@dimen/tv_video_card_text_container_padding_focused" android:layout_marginEnd="@dimen/tv_video_card_text_container_padding_focused" style="@style/tv_bread_text" />
+    </android.support.v17.leanback.widget.NonOverlappingRelativeLayout>
+</android.support.v17.leanback.widget.BaseCardView>

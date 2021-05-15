@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatTextView android:textColor="@color/white" android:gravity="center" android:id="@id/menu_text" android:background="@color/tv_settings_tile_color_unfocused" android:layout_width="@dimen/tv_settings_tile_size" android:layout_height="@dimen/tv_settings_tile_size" android:fontFamily="@font/mtg_sans_bold" android:paddingStart="@dimen/default_spacing" android:paddingEnd="@dimen/default_spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

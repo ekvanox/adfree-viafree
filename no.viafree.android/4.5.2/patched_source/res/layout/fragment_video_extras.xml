@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/video_extras_container" android:background="@color/bondiblue" android:paddingTop="@dimen/default_spacing_extra_large" android:paddingBottom="@dimen/default_spacing_extra_large" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.viafree.android.common.custom_views.CustomFontTextView android:textAppearance="@style/textDefault.White" android:textSize="@dimen/format_heading" android:id="@id/video_extras_title" android:paddingLeft="@dimen/default_horizontal_spacing" android:paddingRight="@dimen/default_horizontal_spacing" android:paddingBottom="@dimen/default_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/episode_extras_title" android:paddingStart="@dimen/default_horizontal_spacing" android:paddingEnd="@dimen/default_horizontal_spacing" app:customFontStyle="mtgSansBlack" />
+        <android.support.v7.widget.RecyclerView android:id="@id/video_extras_recyclerview" android:paddingLeft="@dimen/default_horizontal_spacing" android:paddingRight="@dimen/default_horizontal_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_horizontal_spacing" android:paddingEnd="@dimen/default_horizontal_spacing" />
+    </LinearLayout>
+</FrameLayout>

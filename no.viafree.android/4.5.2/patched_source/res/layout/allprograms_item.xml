@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/selectable_thumbnail_bg"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/white" android:padding="@dimen/default_spacing_large" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/allprograms_preview_image" android:layout_width="@dimen/default_list_image_width" android:layout_height="@dimen/default_list_image_height" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginEnd="10.0dip" android:layout_alignParentStart="true" />
+        <com.viafree.android.common.custom_views.CustomFontTextView android:textAppearance="@style/textDefault.Large.Jumbo" android:ellipsize="end" android:id="@id/allprograms_format_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_toRightOf="@id/allprograms_preview_image" android:layout_alignParentTop="true" android:layout_toEndOf="@id/allprograms_preview_image" app:customFontStyle="mtgSansBlack" />
+        <com.viafree.android.common.custom_views.CustomFontTextView android:textAppearance="@style/textDefault.LightColor" android:textColor="@color/jumbo" android:id="@id/allprograms_footer_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing_small" android:layout_toRightOf="@id/allprograms_preview_image" android:layout_below="@id/allprograms_format_title" android:layout_toEndOf="@id/allprograms_preview_image" app:customFontStyle="mtgSans" style="@style/video_item_description" />
+        <include layout="@layout/channel_logo_layout" />
+    </RelativeLayout>
+</FrameLayout>

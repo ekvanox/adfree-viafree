@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="120.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@color/white" android:layout_width="@dimen/tv_series_page_episode_width" android:layout_height="@dimen/tv_series_page_episode_height">
+        <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="@dimen/tv_video_card_play_button_size" android:layout_height="@dimen/tv_video_card_play_button_size" android:src="@mipmap/ic_launcher" />
+        <android.support.v7.widget.AppCompatImageView android:id="@id/tv_series_episode_image" android:layout_width="@dimen/tv_series_page_episode_width" android:layout_height="@dimen/tv_series_page_episode_height" />
+        <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/tv_series_episode_play_button" android:visibility="gone" android:layout_width="@dimen/tv_video_card_play_button_size" android:layout_height="@dimen/tv_video_card_play_button_size" android:animateLayoutChanges="true" app:srcCompat="@drawable/ic_play" />
+        <ProgressBar android:layout_gravity="bottom" android:id="@id/tv_series_episode_item_progress" android:padding="0.0dip" android:visibility="gone" android:layout_width="fill_parent" style="@style/continueWatchingProgress" />
+        <android.support.v7.widget.AppCompatTextView android:textAppearance="@style/tv_video_time_label" android:textColor="@color/black" android:layout_gravity="end|bottom|center" android:id="@id/tv_series_episode_duration" android:background="@drawable/tv_time_label_time_remaining_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/tv_video_time_label" />
+        <include layout="@layout/tv_card_non_focus_overlay" />
+    </FrameLayout>
+    <android.support.v7.widget.AppCompatTextView android:textAppearance="@style/tv_card_title" android:textColor="@color/tv_light_text_unfocused" android:id="@id/tv_series_episode_title" android:layout_width="@dimen/tv_series_page_episode_width" android:layout_height="wrap_content" style="@style/tv_card_title" />
+</LinearLayout>

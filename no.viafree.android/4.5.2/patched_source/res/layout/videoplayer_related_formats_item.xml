@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout android:gravity="center" android:layout_gravity="center" android:focusable="true" android:clickable="true" android:layout_width="@dimen/default_item_format_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/formatpage_related_formats_container" android:foreground="@drawable/selectable_thumbnail_bg" app:layout_aspectRatio="177.99988%" app:layout_widthPercent="100.0%">
+        <ImageView android:id="@id/formatpage_related_formats_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+        <include layout="@layout/channel_logo_layout" />
+    </FrameLayout>
+    <com.viafree.android.common.custom_views.CustomFontTextView android:textAppearance="@style/textDefault.White" android:ellipsize="end" android:id="@id/formatpage_related_formats_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing_small" android:lines="1" android:layout_below="@id/formatpage_related_formats_container" app:customFontStyle="odudaSemiBold" />
+    <com.viafree.android.common.custom_views.CustomFontTextView android:textAppearance="@style/textDefault.Small.White" android:ellipsize="end" android:id="@id/formatpage_related_format_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_spacing_small" android:lines="1" android:layout_below="@id/formatpage_related_formats_title" app:customFontStyle="mtgSans" />
+</android.support.percent.PercentRelativeLayout>

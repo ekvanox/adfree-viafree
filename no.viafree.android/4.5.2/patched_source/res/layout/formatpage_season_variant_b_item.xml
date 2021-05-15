@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:background="@drawable/season_select_item_background_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/format_season_circle_height" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/view_selected" android:background="@color/orange_yellow" android:visibility="invisible" android:layout_width="16.0dip" android:layout_height="60.0dip" />
+        <android.support.v7.widget.AppCompatTextView android:textAppearance="@style/SeasonSelect.SeasonSelectItem" android:gravity="center_vertical" android:id="@id/season_item_title" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/default_spacing_extra_large" android:text="@string/format_season_title" />
+    </LinearLayout>
+</FrameLayout>

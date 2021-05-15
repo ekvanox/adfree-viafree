@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:id="@id/app_bar_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <android.support.v4.widget.Space android:id="@id/app_bar_layout_space_height" android:layout_width="1.0dip" android:layout_height="?actionBarSize" app:layout_scrollFlags="enterAlways|enterAlwaysCollapsed|scroll" />
+    </android.support.design.widget.AppBarLayout>
+    <FrameLayout android:id="@id/content_fragment_frame" android:paddingTop="@dimen/default_spacing_extra_large" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <android.support.v7.widget.Toolbar android:gravity="center" android:id="@id/toolbar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="@animator/appbar_always_elevated">
+        <ImageView android:id="@id/category_logo" android:background="@color/transparent" android:paddingTop="@dimen/default_spacing_large" android:paddingBottom="@dimen/default_spacing_large" android:layout_width="@dimen/category_logo_width" android:layout_height="@dimen/category_logo_height" />
+        <com.viafree.android.common.custom_views.CustomFontTextView android:layout_gravity="center_vertical" android:id="@id/category_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:customFontStyle="mtgSansBlack" style="@style/textDefault.Large.Dark2" />
+    </android.support.v7.widget.Toolbar>
+</android.support.design.widget.CoordinatorLayout>

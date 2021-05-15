@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@color/offwhite" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" app:theme="@style/ThemeOverlay.AppCompat.Light">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/viafree_logo_horizontal" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout android:paddingTop="?actionBarSize" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/chromecast_progressbar_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ProgressBar android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.viafree.android.common.custom_views.CustomFontTextView android:textAppearance="@style/textDefault" android:gravity="center" android:padding="@dimen/default_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cast_expanded_controller_loading" app:customFontStyle="mtgSans" />
+        </LinearLayout>
+        <com.viafree.android.common.custom_views.CustomFontTextView android:textAppearance="@style/textDefault.Large.Dark1" android:gravity="center" android:id="@id/chromecast_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:customFontStyle="mtgSans" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@color/white" android:layout_width="100.0dip" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/video_item" android:visibility="invisible" android:layout_width="100.0dip" android:layout_height="100.0dip" layout="@layout/tv_video_item" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/favourite_container" android:layout_width="0.0dip" android:layout_height="0.0dip" android:foreground="@drawable/selectable_thumbnail_bg" app:layout_constraintBottom_toBottomOf="@id/video_item" app:layout_constraintEnd_toEndOf="@id/video_item" app:layout_constraintStart_toStartOf="@id/video_item" app:layout_constraintTop_toTopOf="@id/video_item">
+        <android.support.v7.widget.AppCompatTextView android:textColor="@color/jumbo" android:layout_gravity="center" android:id="@id/tv_user_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/formatpage_favorite" android:fontFamily="@font/oduda_semi_bold" />
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/tv_user_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_fileName="@string/lottie_favorite_selected" app:lottie_loop="false" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
