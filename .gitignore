@@ -30,4 +30,7 @@
 .history
 .ionide
 
+/dev
+*.jobf
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,git
