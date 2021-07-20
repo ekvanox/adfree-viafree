@@ -18,7 +18,7 @@ That's all it does, nothing else added nothing else removed!
 ## Install
 #### Simply download and install the APK-file provided in the release of your choice:
 
-**Swedish**: [Adfree Viafree Version 4.21.1](https://github.com/ekvanox/adfree-viafree/releases/tag/se-v.4.21.1)
+**Swedish**: [Adfree Viafree Version 4.22.1](https://github.com/ekvanox/adfree-viafree/releases/tag/se-v.4.22.1)
 
 **Danish**: [Adfree Viafree Version 4.6.2](https://github.com/ekvanox/adfree-viafree/releases/tag/dk-v.4.6.2)
 
